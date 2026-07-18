@@ -1,0 +1,38 @@
+# Celery Worker 镜像（基于主 Dockerfile，只改启动命令）
+FROM python:3.13-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    fonts-noto-cjk libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 \
+    libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY backend/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN playwright install chromium --with-deps
+
+RUN pip install --no-cache-dir "pysweph>=2.10.3.5" pytz numpy geocoder geopy requests \
+    timezonefinder python-dateutil
+RUN pip install --no-cache-dir "dashaflow>=0.3" --no-deps
+RUN pip install --no-cache-dir "PyJHora==4.8.6"
+
+COPY skills/vedic-astrology/vedic-astrology-redskill/scripts /app/skills/scripts
+
+RUN python -c "\
+import os, glob, shutil; \
+import jhora; \
+import swisseph as swe; \
+jhora_ephe = os.path.join(os.path.dirname(jhora.__file__), 'data', 'ephe'); \
+os.makedirs(jhora_ephe, exist_ok=True); \
+swe_dir = os.path.dirname(swe.__file__); \
+[shutil.copy2(f, os.path.join(jhora_ephe, os.path.basename(f))) \
+ for d in [swe_dir, os.path.join(swe_dir,'data'), os.path.join(swe_dir,'ephe')] \
+ if os.path.isdir(d) for f in glob.glob(os.path.join(d, '*.se1'))] \
+" || echo "ephemeris copy skipped"
+
+COPY backend/ .
+RUN mkdir -p /app/storage/reports
+
+CMD ["celery", "-A", "app.tasks.reading_tasks.celery_app", "worker", \
+     "--loglevel=info", "--concurrency=2", "-P", "solo"]

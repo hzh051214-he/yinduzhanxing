@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# 环境变量（含 API Keys，绝不上传）
+backend/.env
+.env
+
+# 报告存储（用户数据，不上传）
+backend/storage/
+
+# 前端 build 产物
+frontend/dist/
+frontend/node_modules/
+
+# skills 的 venv（很大，不上传）
+skills/*/venv/
+skills/*/*/venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Playwright
+/tmp/

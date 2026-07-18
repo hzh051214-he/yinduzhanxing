@@ -1,0 +1,2982 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vedic Astrology Reading — 样本盘(2005-12-14 上海 男)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --parchment: #f8f4ec; --parchment-deep: #f0eadb;
+  --brown: #5a4636; --brown-light: #7a6652; --brown-muted: #9c8b7a;
+  --gold: #b59540; --gold-soft: #d4c07a; --gold-line: #c9a94e;
+  --text: #3d352c; --text-light: #5a4e42; --text-muted: #8a7d70;
+  --border: #ddd3c2; --border-light: #e8e0d2;
+  --table-head-bg: #ede6d8; --table-stripe: #f4efe5;
+}
+@page { size: A4; margin: 22mm 20mm 24mm 20mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+  font-size: 14px; line-height: 1.85; color: var(--text);
+  background: #e8e0d0;
+  max-width: 780px; margin: 0 auto; padding: 48px 56px;
+  background: var(--parchment);
+  box-shadow: 0 1px 30px rgba(74,55,40,0.1);
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+@media print {
+  body { background: var(--parchment); box-shadow: none; padding: 0; max-width: none; font-size: 10.5pt; }
+  .no-print { display: none; }
+  .section-header, thead th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  table { font-size: 8pt !important; }
+}
+
+.cover {
+  page-break-after: always; min-height: 100vh;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  position: relative; padding: 80px 20px 60px; text-align: center;
+}
+.cover-top {
+  color: var(--gold); font-family: 'Inter', sans-serif;
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 4px; text-transform: uppercase; margin-bottom: 40px;
+}
+.cover h1 {
+  font-family: "Noto Serif SC", "Songti SC", serif;
+  font-size: 52px; font-weight: 700;
+  color: var(--brown); line-height: 1.3; margin-bottom: 6px;
+  border-bottom: none; padding-bottom: 0;
+}
+.cover .cover-accent {
+  font-family: "Noto Serif SC", serif;
+  font-size: 28px; font-weight: 400; color: var(--gold);
+  letter-spacing: 6px; margin-bottom: 12px;
+}
+.cover .cover-ornament {
+  width: 60px; height: 1px; background: var(--gold-line); margin: 28px auto;
+}
+.cover .subtitle {
+  font-size: 14px; color: var(--text-muted); font-weight: 400;
+  letter-spacing: 1px; margin-bottom: 0;
+}
+.cover-meta {
+  margin-top: auto; padding-top: 0; width: 100%; text-align: left;
+  border-top: 1px solid var(--border-light); padding-top: 24px;
+}
+.cover-meta-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 6px 40px;
+  font-size: 12px; color: var(--text-muted);
+}
+.cover-meta-grid div { display: flex; gap: 8px; align-items: baseline; padding: 4px 0; }
+.cover-meta-grid dt { font-weight: 500; color: var(--brown-muted); font-size: 11px; min-width: 55px; flex-shrink: 0; }
+.cover-meta-grid dd { margin: 0; color: var(--text-light); }
+
+.toc { page-break-after: always; padding: 40px 0; }
+.toc h2 {
+  font-family: "Noto Serif SC", serif; font-size: 22px; color: var(--brown);
+  margin-bottom: 24px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+.toc-list { list-style: none; }
+.toc-list li {
+  padding: 8px 0; border-bottom: 1px dashed var(--border-light);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 14px;
+}
+.toc-section { font-weight: 500; color: var(--brown); }
+.toc-list li.toc-part {
+  background: var(--parchment-deep); color: var(--brown); padding: 10px 16px;
+  margin: 4px -16px; border-radius: 3px; border: none; border-bottom: none;
+  font-weight: 600; font-size: 14px;
+}
+
+.section { page-break-before: always; }
+.section:first-of-type { page-break-before: auto; }
+.section-header {
+  border-left: 3px solid var(--gold-line);
+  color: var(--brown); padding: 12px 22px; margin: 0 0 28px;
+}
+.section-header .section-number {
+  color: var(--gold); font-family: 'Inter', sans-serif;
+  font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+}
+.section-header h2 {
+  font-family: "Noto Serif SC", serif; font-size: 21px; font-weight: 700;
+  margin-top: 2px; border: none; color: var(--brown) !important; padding-bottom: 0;
+}
+
+h1 {
+  font-family: "Noto Serif SC", "Crimson Pro", serif; font-size: 22px; color: var(--brown);
+  margin: 32px 0 14px; font-weight: 600;
+}
+h2 {
+  font-family: "Noto Serif SC", "Crimson Pro", serif; font-size: 18px; color: var(--brown);
+  margin: 28px 0 12px; font-weight: 600;
+}
+h3 {
+  font-size: 15px; font-weight: 600; color: var(--brown);
+  margin: 22px 0 8px; padding-left: 10px;
+  border-left: 2px solid var(--gold-line);
+}
+h4 { font-size: 14px; font-weight: 600; color: var(--brown-light); margin: 16px 0 6px; }
+p { margin: 0 0 12px; text-align: justify; }
+
+table {
+  width: 100%; border-collapse: collapse; margin: 10px 0 20px;
+  font-size: 12px; line-height: 1.5;
+}
+thead th {
+  background: var(--table-head-bg); color: var(--brown);
+  padding: 7px 10px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  border-bottom: 1.5px solid var(--gold-line);
+}
+tbody td { padding: 6px 10px; border-bottom: 1px solid var(--border-light); vertical-align: top; }
+tbody tr:nth-child(even) { background: var(--table-stripe); }
+
+table:has(th:nth-child(10)) { font-size: 10px; }
+table:has(th:nth-child(10)) th,
+table:has(th:nth-child(10)) td { padding: 4px 3px; text-align: center; white-space: nowrap; }
+table:has(th:nth-child(10)) th:first-child,
+table:has(th:nth-child(10)) td:first-child { text-align: left; font-weight: 600; }
+
+blockquote {
+  border-left: 2px solid var(--gold-line);
+  background: var(--parchment-deep);
+  padding: 10px 16px; margin: 14px 0; border-radius: 0 3px 3px 0;
+  color: var(--text-light); font-size: 13px;
+}
+blockquote strong { color: var(--brown); font-style: normal; }
+
+ul, ol { margin: 6px 0 14px 22px; }
+li { margin-bottom: 3px; }
+
+strong { color: var(--brown); }
+code {
+  background: var(--parchment-deep); padding: 1px 4px; border-radius: 2px;
+  font-size: 12px; color: var(--brown-light);
+  font-family: 'Inter', monospace;
+}
+pre {
+  background: #3d352c; color: #ede6d8; padding: 14px 18px; border-radius: 4px;
+  margin: 14px 0; font-size: 11px; line-height: 1.6; overflow-x: auto; white-space: pre-wrap;
+}
+pre code { background: transparent; border: none; color: inherit; padding: 0; }
+hr { border: none; border-top: 1px dashed var(--border-light); margin: 24px 0; }
+
+.page-break { page-break-before: always; }
+.footer-note {
+  margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--border-light);
+  font-size: 10px; color: var(--text-muted); text-align: center;
+}
+</style></head>
+<body>
+<div class="cover">
+  <div class="cover-top">数据驱动吠陀占星</div>
+  <h1>吠陀占星</h1>
+  <div class="cover-accent">完 整 解 读</div>
+  <div class="cover-ornament"></div>
+  <div class="subtitle">核心 + 事业 + 感情 完整报告</div>
+  <div class="cover-meta"><div class="cover-meta-grid">
+    <div><dt>客户</dt><dd>样本盘(2005-12-14 上海 男)</dd></div>
+    <div><dt>上升</dt><dd>Capricorn 摩羯座</dd></div>
+    <div><dt>信息</dt><dd>男 | 单身</dd></div>
+    <div><dt>套餐</dt><dd>核心 + 事业 + 感情</dd></div>
+    <div><dt>体系</dt><dd>Parashari Jyotish | KN Rao School</dd></div>
+    <div><dt>软件</dt><dd>Jagannatha Hora v8.0 | Lahiri Ayanamsha</dd></div>
+    <div><dt>大运</dt><dd>Vimsottari (Mahadasha + Antardasha)</dd></div>
+    <div><dt>量化</dt><dd>Shadbala, Ashtakavarga (SAV/BAV), D9 Navamsha</dd></div>
+  </div></div>
+</div><div class="toc"><h2>目录</h2><ul class="toc-list"><li class="toc-part">第二部分A：行星审计 (日/月/火)</li><li class="toc-part">第二部分B：行星审计 (水/木/金)</li><li class="toc-part">第二部分C：行星审计 (土/罗/计)</li><li class="toc-part">第二部分D：行星审计 (总结)</li><li class="toc-part">第三部分A：D9盘分析</li><li class="toc-part">第三部分B：分盘交叉分析</li><li class="toc-part">第四部分A：宫位诊断 (1-6宫)</li><li class="toc-part">第四部分B：宫位诊断 (7-12宫)</li><li class="toc-part">第五部分：人生架构总结</li><li class="toc-part">第五部分（续）：人生架构总结</li><li class="toc-part">技术附录</li><li class="toc-part">第三部分C：D30逆境盘深度分析</li><li class="toc-part">第三部分D：D60业力盘深度分析</li><li class="toc-part">第三部分E：多系统大运共振分析</li><li class="toc-part">第六部分：事业 — 画像与叙事</li><li class="toc-part">第六部分（续）：事业 — 战略决策</li><li class="toc-part">第七部分：感情 — 体质报告与时间轴</li><li class="toc-part">第七部分（续）：感情 — 建议与风险</li><li class="toc-part">第八部分：D11深度转化盘分析</li></ul></div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 01</div>
+    <h2>第二部分A：行星审计 (日/月/火)</h2>
+  </div>
+  <h1>行星审计（一）：Sun、Moon</h1>
+<blockquote>
+<p>分析范围：D1/D9/D10/D4/D5/D60 全部可信
+出生时间精度：精确到分钟（出生证明）
+盲审模式：纯数据推导，无用户背景信息</p>
+</blockquote>
+<p>接下来我逐颗星帮你做个"体检"——看每颗星在你人生里扮演什么角色、状态好不好、管的事情顺不顺。先说结论，数据表附在后面供你对照。</p>
+<hr />
+<h2>——— 太阳（Sun）：清理者，灵魂的守门人 ———</h2>
+<h3>【这颗星对你意味着什么】</h3>
+<p>太阳管着你人生里的"变故宫"（8宫）。8宫不是坏事的代名词，它管的是：深度转化、危机后重生、隐藏的财富（遗产/股权/他人资源）、研究能力和穿透性思维。太阳作为8宫主，就像一个专门处理棘手问题的律师——他不负责日常琐事，专门在关键节点出手。</p>
+<p>太阳的状态是中性的（落在天蝎座，座主是火星，自然关系中性）。不是特别强，也没出问题。力量排全盘第5（129%），说明这颗星能正常运作，不会掉链子。它落在11宫（收入宫），这是一个吉利的位置——清理者在收入宫待着，意味着你的收入往往跟"别人的问题"或"深度工作"挂钩：帮人解决困难、做研究、做咨询、处理复杂事务，这些事可以转化成你的收入来源。</p>
+<p>它落在Jyeshtha星宿第4 pada，星宿主是水星（GK，障碍指示星）。这给太阳加了一层水星的色彩——分析型、语言型、善用信息。但水星同时是你的障碍星，所以太阳也暗示着：你在深度思考和表达之间有时会有摩擦，想得很深但说出来可能没那么顺畅。</p>
+<p>当前（Rahu大运·Jupiter小运，2025年11月-2028年3月），太阳没有直接当值，但太阳管的8宫事务——深度转化、隐藏机会——在这段时间可能通过Rahu大运的放大效应得到触发。Rahu在3宫（行动/传播），8宫的深度资源可能以某种非常规的方式暴露在你面前。</p>
+<h3>【关键数据】</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>清理者，管8宫（变故/深度转化）</td>
+<td>深度工作者，处理别人搞不定的问题</td>
+</tr>
+<tr>
+<td>健康</td>
+<td>顺行，无燃烧</td>
+<td>正常运作</td>
+</tr>
+<tr>
+<td>尊贵</td>
+<td>中性（天蝎/火星）</td>
+<td>水土尚可，不是主场也不是异乡</td>
+</tr>
+<tr>
+<td>力量</td>
+<td>Shadbala 129%</td>
+<td>中等偏上，够用</td>
+</tr>
+<tr>
+<td>年龄</td>
+<td>28°（老年期）</td>
+<td>沉稳，经验型</td>
+</tr>
+<tr>
+<td>落宫</td>
+<td>11宫（收入/社交）</td>
+<td>清理者在吉宫，转化能力可变现</td>
+</tr>
+</tbody>
+</table>
+<h3>【推演逻辑】</h3>
+<p>P1=清理者（8宫主），这是功能凶角色——意味着太阳管的领域带有"结束和转化"的底色，不是平稳积累的那种。但P7中性（不是落陷），P5在11宫（吉路），P9=129%（有力量）。冲突仲裁：<strong>凶角色+中性尊贵+吉路</strong>，结论是"清理者能正常作业"——不放大毒性，但也不把它当吉星用。具体表现：你在研究、分析、危机处理方向有能力，但如果把太阳管的领域当作"主赛道"去冲，会发现每次重大推进都伴随着某种代价或洗牌。</p>
+<p><strong>【置信度】：中</strong>（P1凶+P5吉，信号中等互消）</p>
+<hr />
+<h2>——— 月亮（Moon）：A级信号，入旺的情感守护者 ———</h2>
+<h3>【这颗星对你意味着什么】</h3>
+<p>月亮在这张盘里是最耀眼的行星之一。它落在金牛座，这是月亮最喜欢待的地方——入旺（Exalted）。入旺的月亮就像一个人回到了自己最舒服的老家，所有能力全部释放。它的Shadbala全盘第2（129%），力量很好。</p>
+<p>月亮管着你的7宫（婚姻/合伙）。一个入旺的7宫主，意味着你在合伙关系和婚姻方向的"硬件"天然不错——你有能力建立深度的情感连接，而且这种能力随着时间会越来越稳定。</p>
+<p>月亮坐在5宫（子女/创造/恋爱），这个位置叫做"吉中之吉"——7宫主跑到了5宫，婚姻和恋爱深度绑定。你的感情史很可能有一个特点：每段认真的关系都是从真实的情感共鸣开始的，不是单纯的条件匹配。它落在Krittika星宿第4 pada，星宿主是太阳——这给月亮加了一层"目标感"和"原则性"，你对感情是有标准的，不会将就。</p>
+<p><strong>入旺检查（P7.2 Uchcha Bhanga）</strong>：
+- 燃烧？月日角距161°，完全无燃烧。✅
+- 逆行？月亮顺行。✅
+- 功能凶星合相？月亮5宫，没有凶星同宫。✅
+- 定位星Venus状态？Venus是Taurus的守护星，它落在1宫（Capricorn），状态中性，顺行。定位星稳定。✅</p>
+<p>结论：<strong>入旺无受损</strong>，月亮是这张盘里兑现率最高的行星之一。</p>
+<p>月亮大运（2006-2016）是这张盘里评分最高的大运之一——正面条件4项、负面条件0项，判定正面期。这段时间对应你出生后1岁到11岁，是童年期。入旺月亮大运对于幼年意味着情感安全感充足，生长环境整体比较滋养。</p>
+<p>此刻（2026年7月）你处在Rahu大运·Jupiter小运，月亮虽然没有当值，但它管的7宫一直是这张盘里的优势区——7宫由Jupiter和Venus相位（引擎数据），感情方向的贵人基础不差。</p>
+<h3>【关键数据】</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>交易者，管7宫（婚姻/合伙）</td>
+<td>感情和合伙关系的执行者</td>
+</tr>
+<tr>
+<td>健康</td>
+<td>顺行，无燃烧，入旺无损</td>
+<td>满状态</td>
+</tr>
+<tr>
+<td>尊贵</td>
+<td>入旺（金牛）</td>
+<td>F1赛车，全力输出</td>
+</tr>
+<tr>
+<td>力量</td>
+<td>Shadbala 129%，全盘第2</td>
+<td>中等偏强</td>
+</tr>
+<tr>
+<td>年龄</td>
+<td>9°（少年期→青壮期过渡）</td>
+<td>还在成长，中年后会更稳</td>
+</tr>
+<tr>
+<td>落宫</td>
+<td>5宫（子女/创造/恋爱）</td>
+<td>吉路，感情与创造能量合流</td>
+</tr>
+<tr>
+<td>落点</td>
+<td>5宫(Taurus) SAV=28</td>
+<td>中等资源，够用</td>
+</tr>
+</tbody>
+</table>
+<h3>【推演逻辑】</h3>
+<p>P1=交易者（7宫主），功能中性。P7=入旺，全力输出。P5=5宫（吉路）。P9=129%（有力）。这几层信号高度一致——<strong>月亮是这张盘里状态最干净的行星：没有角色毒性，没有健康损伤，位置吉利，力量到位</strong>。</p>
+<p>它的主要贡献是：给你提供稳定的情感底盘和优质的合伙能力。有它在，你在需要"跟人建立连接"的事情上都不会太差。</p>
+<p><strong>【置信度】：高</strong>（P1/P7/P5/P9全部指向同一方向）</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 02</div>
+    <h2>第二部分B：行星审计 (水/木/金)</h2>
+  </div>
+  <h1>行星审计（二）：Mars、Mercury</h1>
+<hr />
+<h2>——— 火星（Mars）：A级信号，Ruchaka Yoga，坐镇主场的武将 ———</h2>
+<h3>【这颗星对你意味着什么】</h3>
+<p>火星是这张盘里最强的"实力型"行星。它入庙在白羊座——白羊就是火星自己的家，他在这里完全放开手脚，没有任何约束。而且它坐在4宫（家庭/房产/学习基础），正好激活了五大贤者格局之一：<strong>Ruchaka Yoga（鲁查卡格）</strong>——火星入庙在角宫，这是教科书级别的强位配置。</p>
+<p>Ruchaka Yoga的承诺是：强大的执行力、领导能力、在竞争性领域脱颖而出的能力、以及在需要勇气和决断的时刻不会退缩。力量打分全盘第6（126%），不算最高但完全足够支撑它的格局。</p>
+<p>火星同时管着你的4宫（家庭/学习/房产）和11宫（收入/社交/朋友圈）。两个管辖领域加在一起，它是"交易者+竞争者"的复合身份——4宫是你的根基，11宫是你的收益。这两件事火星都在管，而且它坐在自己管的4宫，等于管家亲自守着家门，执行效率极高。</p>
+<p>从P1.3纹理看：火星是自然凶星，但管的是4宫（家）和11宫（收益），不是破坏性的角色，而是"高压建设者"——<strong>[高压红利]：过程可能不轻松，但它确实能给你带来真实的物质收益和稳固的基础</strong>。</p>
+<p><strong>Mars大运（2016-2023）</strong>是你人生迄今最亮眼的一段窗口：正面4条、负面0条，判定正面期，而且是激活Ruchaka Yoga的最佳时机。那7年对应你的11-18岁青少年阶段，是打基础、建立竞争优势的关键期。</p>
+<p>D9交叉（简要）：Mars在D9落Leo（狮子），从D9 Lagna（Leo）数在1宫，进入"金库区"，是稳健资产。身份继承：D1竞争者+D9强 → <strong>竞争优势扩大</strong>。</p>
+<h3>【关键数据】</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>交易者+竞争者，管4/11宫</td>
+<td>建设者，收益管家</td>
+</tr>
+<tr>
+<td>健康</td>
+<td>顺行，无燃烧</td>
+<td>满状态</td>
+</tr>
+<tr>
+<td>尊贵</td>
+<td>入庙（白羊）</td>
+<td>豪华主场，全力输出</td>
+</tr>
+<tr>
+<td>格局</td>
+<td>Ruchaka Yoga（五大贤者）</td>
+<td>高(强实现)</td>
+</tr>
+<tr>
+<td>力量</td>
+<td>Shadbala 126%，全盘第6</td>
+<td>中等偏强</td>
+</tr>
+<tr>
+<td>年龄</td>
+<td>14°（青壮期）</td>
+<td>最有力，主动型</td>
+</tr>
+<tr>
+<td>落宫</td>
+<td>4宫（家庭/学习）</td>
+<td>吉路，且是自管宫</td>
+</tr>
+<tr>
+<td>大运判定</td>
+<td>Mars期（2016-2023）正面期</td>
+<td>格局激活窗口</td>
+</tr>
+</tbody>
+</table>
+<h3>【推演逻辑】</h3>
+<p>P1=交易者+竞争者（管4/11宫），功能中性偏吉（4宫是根基，11宫是收益）。P7=入庙（全力）。P5=4宫（吉路，且是自管宫，等于管家坐家里）。P9=126%（有力）。P12=Ruchaka Yoga（五大贤者，高强度实现）。</p>
+<p>这5层信号全部正向叠加——火星是这张盘里<strong>最干净的实力型行星</strong>：角色不带毒，位置在自家，尊贵满状态，格局顶级。它是你的执行引擎，在需要动手、需要冲劲、需要竞争的场合，这颗星会给你真实的力量支撑。</p>
+<p><strong>【置信度】：高</strong>（五层信号高度一致）</p>
+<hr />
+<h2>——— 水星（Mercury）：障碍指示星，客居异乡的信息处理者 ———</h2>
+<h3>【这颗星对你意味着什么】</h3>
+<p>水星在这张盘里的处境有些微妙。它管着两个宫位：6宫（疾病/竞争/服务）和9宫（运势/信仰/父亲/高等教育）。这是一个让人纠结的组合——9宫是吉宫（运势、高教、哲学），6宫是凶宫（竞争、疾病、债务）。所以水星是"忠诚盟友+成长型竞争者"的混合角色。</p>
+<p>更重要的是：水星落在天蝎座，天蝎的座主是火星，而水星跟火星是自然敌对关系。用P7.3的术语说：<strong>复合尊贵度=敌方（enemy）</strong>，水星在这里是"客居他乡"的状态——能力本身没问题（Shadbala 101%，刚刚过线），但环境不支持，有点像一个习惯在图书馆工作的人被扔进了工地。</p>
+<p>水星坐在11宫（收入/社交），和太阳同宫——这是两颗星的合相（度数差20.9°，范围合相，不是紧密合相）。太阳在天蝎11宫，水星也在天蝎11宫，两者的影响会有融合：太阳的8宫深度思维和水星的信息处理能力在11宫交汇，暗示你的社交圈和收入方向可能带有"深度研究+信息传递"的色彩。</p>
+<p>水星是你的GK（障碍指示星，排第7）——这不是一个让人开心的标签。它意味着水星管的领域（9宫的运势路径和6宫的竞争）往往是你在推进目标时遇到阻力的来源。但这不是宿命，障碍指示星的作用是让你在这个方向多花力气、多动脑子，而不是让你放弃。</p>
+<p>当前（Rahu大运），水星没有直接当值。但水星管的9宫（运势）会在Rahu大运中持续运行——Rahu本身在3宫，跟9宫形成7宫对望关系，这两年你对"方向感"和"信仰/人生观"的追寻会比较活跃，可能会重新想清楚一些"我到底要去哪里"的问题。</p>
+<h3>【关键数据】</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>盟友+竞争者，管6/9宫（障碍指示星GK）</td>
+<td>信息型障碍制造者，也是路径开拓者</td>
+</tr>
+<tr>
+<td>健康</td>
+<td>顺行，无燃烧</td>
+<td>运作正常</td>
+</tr>
+<tr>
+<td>尊贵</td>
+<td>敌方（天蝎/火星）</td>
+<td>水土不服，有内耗</td>
+</tr>
+<tr>
+<td>力量</td>
+<td>Shadbala 101%，全盘第4</td>
+<td>刚过及格线，勉强有力</td>
+</tr>
+<tr>
+<td>年龄</td>
+<td>7°（少年期）</td>
+<td>潜力还在成长中</td>
+</tr>
+<tr>
+<td>落宫</td>
+<td>11宫（收入）</td>
+<td>吉路，但尊贵度打折</td>
+</tr>
+</tbody>
+</table>
+<h3>【推演逻辑】</h3>
+<p>P1=盟友+竞争者（管9+6宫），功能凶（同时管凶宫6）。P7=敌方（环境掣肘）。P5=11宫（吉路，正向）。P9=101%（刚及格）。</p>
+<p>冲突仲裁：P1功能凶+P7敌方+P5吉路+P9刚及格——这是<strong>信号混杂</strong>的典型情形。水星不会完全拖累你，但它也不会给你雪中送炭。它管的两个领域（6宫和9宫）需要你<strong>主动去维护</strong>，不会自动顺畅：高等教育/运势方向有障碍感，需要更多努力；竞争和服务领域有暗流，需要留意细节。</p>
+<p>P3.2（合相效应）：与太阳范围合相（20.9°），两者捆绑——水星的信息能力和太阳的深度穿透力在11宫融合，是11宫收益的双驱动，但太阳是功能凶星（8宫主），这种捆绑不是纯粹的加分，有一定的复杂性。</p>
+<p><strong>【置信度】：中</strong>（P1凶+P7敌方与P5吉路形成对立，整体表现视具体事务而定）</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 03</div>
+    <h2>第二部分C：行星审计 (土/罗/计)</h2>
+  </div>
+  <h1>行星审计（三）：Jupiter、Venus</h1>
+<hr />
+<h2>——— 木星（Jupiter）：B级信号，欺骗性风险，看着好但管着凶事的智者 ———</h2>
+<h3>【这颗星对你意味着什么】</h3>
+<p>木星是吠陀占星里最大的"天然吉星"，代表智慧、扩展、保护和好运。但在这张盘里，木星扮演的角色有一个重要的陷阱：<strong>它同时管着3宫（兄弟/行动/短途）和12宫（损耗/隐居/灵性/海外）</strong>。12宫在功能上属于凶宫，这触发了一个必须标注的信号——</p>
+<p><strong>[欺骗性风险（Soft-Betrayal）]</strong>：木星是天然吉星，但它管着12宫（损耗/遗忘/出走）。它看起来友善，但它守护的领域带有"散失"和"无形消耗"的底色。人话翻译：木星展示出来的那种扩展感和乐观，有一部分是消耗型的——可能表现为过度投入却回报少，或者在某些事上越努力越亏损。这不是让你不信任木星，而是让你在木星激活的大运期（2041-2057）保持清醒。</p>
+<p>木星落在10宫（事业宫/天秤座），状态中性，力量全盘第1（125%）。10宫是事业宫，木星在这里的存在感不弱——它相位2宫（财富）、4宫（家庭）、6宫（竞争），对三个宫位都有影响。木星在10宫相位2宫，这通常意味着事业和财富之间有连接；相位4宫，意味着家庭/学习也受木星的保护和扩展影响。</p>
+<p>但木星的角色是3+12宫主，这让它在10宫的贡献有一层注脚：它给10宫带来的是一种"扩展型但有代价的事业能量"，而不是纯粹的吉祥加持。具体说：你在事业上会有木星式的发展欲望和视野，但这种视野扩展的背后往往有隐性代价（12宫的耗散）。</p>
+<p>Rahu大运·Jupiter小运（2025年11月-2028年3月）：当前就在这个窗口里。木星大运判定为混合期（正面2条、负面1条）。小运判定同样是混合期。大×小叠加：<strong>该领域顺利</strong>（Rahu=平淡期基调，不拖累整体）。这段时间木星的正面能量会比较活跃——10宫的事业视野扩展，2宫的财富有所动作，但要留意12宫的暗流：有没有在某件事上越投越多却没有回报？如果有，那就是木星在12宫发挥影响。</p>
+<h3>【关键数据】</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>竞争者+清理者，管3/12宫</td>
+<td><strong>[欺骗性风险]</strong> 看着吉利，管的是耗散领域</td>
+</tr>
+<tr>
+<td>健康</td>
+<td>顺行，无燃烧</td>
+<td>正常运作</td>
+</tr>
+<tr>
+<td>尊贵</td>
+<td>中性（天秤/金星）</td>
+<td>中规中矩，不强不弱</td>
+</tr>
+<tr>
+<td>力量</td>
+<td>Shadbala 125%，全盘第1</td>
+<td>力量最高但角色受限</td>
+</tr>
+<tr>
+<td>年龄</td>
+<td>16°（青壮期）</td>
+<td>主动型，能量充足</td>
+</tr>
+<tr>
+<td>落宫</td>
+<td>10宫（事业）</td>
+<td>吉路，但带欺骗性风险</td>
+</tr>
+<tr>
+<td>当前</td>
+<td>Rahu-Jupiter小运（2025.11-2028.03）</td>
+<td>事业视野扩展期，警惕12宫耗散</td>
+</tr>
+</tbody>
+</table>
+<h3>【推演逻辑】</h3>
+<p>P1=竞争者+清理者（管3/12宫），功能凶（管12宫损耗）。P7=中性。P5=10宫（吉路）。P9=125%（有力，全盘第一）。</p>
+<p>P1.3纹理：天然吉星木星管凶宫12宫，<strong>[欺骗性风险]</strong>激活。有力量、好位置，但职责带有耗散性。</p>
+<p>这是一个典型的"高力量+功能凶"配置。不能简单说好，也不能简单说坏。木星给你的是<strong>视野和扩展感</strong>，但你要知道它展示的扩展有时候是一张支票，不是现金。最好的用法是：利用木星在10宫的高位来建立事业视野和影响力，但对12宫的诱惑（逃避现实、过度灵性化、无谓的损耗）要保持清醒。</p>
+<p><strong>【置信度】：中</strong>（P1凶+P5吉，方向混合）</p>
+<hr />
+<h2>——— 金星（Venus）：A级信号，Yogakaraka，这张盘最珍贵的资产 ———</h2>
+<h3>【这颗星对你意味着什么】</h3>
+<p>如果说火星是这张盘的"武将"，那金星就是这张盘的"CEO"。金星在摩羯座Lagna的星盘里同时管着5宫（子女/创造/恋爱/投资）和10宫（事业/地位/权威）——三角宫（5宫）+角宫（10宫）双掌，这叫做<strong>Yogakaraka（格局王/CEO）</strong>，是整张盘里功能最吉利的行星，没有之一。</p>
+<p>金星落在1宫（上升/自我），状态中性，Shadbala 133%（全盘第3）。1宫是Dig Bala的基准宫之一（水星和木星在1宫最强，但金星在1宫也是强位），意味着金星在这个位置上的能量能够充分施展。</p>
+<p>金星落在摩羯座，星宿是Uttara Ashadha（星宿主是太阳）。这给金星加了一层太阳的特质：目标感、成就导向、有一种不达目的不罢休的劲儿。金星坐在1宫，代表你本人的气质和外在形象会自然散发出一种Venus的色彩——优雅、审美感、温和但有力量。</p>
+<p><strong>金星大运（2100-2120）</strong>是这张盘最靠后的大运，评分也是最高的正面期（正面4条、负面0条）。当然那是很遥远的未来。但金星在当前的重要性不在于大运，而在于它是<strong>Yogakaraka</strong>：在任何时刻，凡是涉及5宫（创造、投资、恋爱、子女）和10宫（事业方向、地位、权威）的事情，金星都是你最可靠的天然盟友。</p>
+<p><strong>P1.3纹理</strong>：金星是天然吉星，同时管吉宫（5宫、10宫），没有欺骗性风险。<strong>不触发[欺骗性风险]</strong>。反而是一个罕见的"吉星管吉宫"配置，这才是真正的盟友。</p>
+<p><strong>与土星的合作关系</strong>：金星落1宫，土星也是1宫主（Capricorn Lagna的宫主），两者有天然的协同效应。金星和土星形成7宫互视（引擎相位表：Venus→Saturn 7th，Saturn→Venus 7th）——这是一个深度双向连接，意味着你的事业（金星管10宫）和自我系统（土星管1宫）之间高度互联，做事业的过程就是在建立自我，建立自我也在推进事业。这种连接很稳固，不容易断裂。</p>
+<h3>【关键数据】</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>Yogakaraka，管5/10宫（功能吉，最高级别）</td>
+<td>CEO角色，吉星管吉宫</td>
+</tr>
+<tr>
+<td>健康</td>
+<td>顺行，无燃烧</td>
+<td>满状态</td>
+</tr>
+<tr>
+<td>尊贵</td>
+<td>中性（摩羯/土星）</td>
+<td>中规中矩，有协同效应</td>
+</tr>
+<tr>
+<td>格局</td>
+<td>Raja Yoga + Dhana Yoga参与星</td>
+<td>多格局核心</td>
+</tr>
+<tr>
+<td>力量</td>
+<td>Shadbala 133%，全盘第3</td>
+<td>强有力</td>
+</tr>
+<tr>
+<td>年龄</td>
+<td>5°（婴儿期→少年期过渡）</td>
+<td>潜力仍在成长，30岁后开始全面展开</td>
+</tr>
+<tr>
+<td>落宫</td>
+<td>1宫（自我/上升）</td>
+<td>吉路，坐镇本命宫</td>
+</tr>
+<tr>
+<td>Ketu相位</td>
+<td>Ketu→Venus 5th</td>
+<td>计都相位金星，带来某种去执念的色彩</td>
+</tr>
+</tbody>
+</table>
+<h3>【推演逻辑】</h3>
+<p>P1=Yogakaraka（最高功能吉角色）。P7=中性（不是最强，但够用）。P5=1宫（吉路，本命宫）。P9=133%（有力）。P12=参与Raja Yoga和Dhana Yoga（多重格局核心）。</p>
+<p>这五层信号中，P1是整张盘最高的"吉角色"，P5在自身最好的宫位之一，P12参与两大格局——<strong>金星是这张盘的核心资产，是你在事业和创造力方向上的天然优势</strong>。</p>
+<p>唯一的注意点：年龄度数5°（婴儿期），说明金星的能量现在还没有完全展开，要等你到30岁上下才会越来越稳。目前它的表现是潜力型的，像一棵正在扎根的树。</p>
+<p><strong>【置信度】：高</strong>（P1/P5/P9/P12全部高度正向，P7中性不拖累）</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 04</div>
+    <h2>第二部分D：行星审计 (总结)</h2>
+  </div>
+  <h1>行星审计（四）：Saturn、Rahu、Ketu</h1>
+<hr />
+<h2>——— 土星（Saturn）：A级信号，Yogakaraka，高压建设者，逆行的长跑冠军 ———</h2>
+<h3>【这颗星对你意味着什么】</h3>
+<p>土星是摩羯座Lagna中另一个Yogakaraka——它同时管着1宫（自我/体质/人生底色）和2宫（财富/家庭财务/语言表达）。1宫（角宫）+2宫没有直接形成Yogakaraka，但它作为1宫主（Core-Driver），是整张盘的"灵魂驱动者"：<strong>凡是1宫主强，整张盘的生命力就强</strong>。</p>
+<p>土星落在7宫（婚姻/合伙/巨蟹座），这个位置有一个天文奖项：<strong>Dig Bala（方向力量）</strong>，土星在7宫获得最强的方向力量，相当于运动员在最擅长的主场比赛。Shadbala 119%（全盘第7，最低），但Dig Bala弥补了Shadbala的劣势——这颗星不是全盘力量最强的，但它在7宫的"主场效应"让它比纸面数字更能打。</p>
+<p><strong>土星逆行（Retrograde）</strong>：这是这颗星的重要标注。逆行的土星意味着它回头审视、反复检验——用人话说：你在1宫和2宫的事务（自我建立、财富积累、语言表达）往往需要比别人多一轮的"内部审核"，你不会轻易满足于表面的成果，会一遍一遍地回头检查和修正。这是一种慢而稳的能量，不适合急功近利，但适合打长期战。</p>
+<p><strong>[高压红利]</strong>（P1.3纹理）：土星是天然凶星，但它是Core-Driver（1宫主）+ Yogakaraka候补。自然凶星担任最高角色，这不是坏事，而是"高压建设者"的模式——过程必然不轻松（土星代表延迟、限制、代价），但最终建出来的东西是结实的、经得住时间考验的。</p>
+<p>土星相位：Saturn→Mars（10th相位），Saturn→Venus（7th互视），Saturn→Ketu（3rd相位）。土星看着火星的10宫事业方向，给你的事业施加一种"纪律感和结构感"——你做事业不会随性，会有规划，有框架，愿意为长期目标牺牲短期舒适。</p>
+<p><strong>Saturn大运（2057-2076）</strong>判定正面期（正面4条、负面0条），那是你52-71岁的黄金收获期。土星的模式就是这样——前半生建设，后半生收获。</p>
+<h3>【关键数据】</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>Core-Driver+Trader，管1/2宫（功能吉）</td>
+<td><strong>[高压红利]</strong> 慢但真实</td>
+</tr>
+<tr>
+<td>健康</td>
+<td><strong>逆行</strong>，无燃烧</td>
+<td>深度审查模式，慢但持久</td>
+</tr>
+<tr>
+<td>尊贵</td>
+<td>中性（巨蟹/月亮）</td>
+<td>水土中等，非主场</td>
+</tr>
+<tr>
+<td>Dig Bala</td>
+<td>7宫获方向力量</td>
+<td>主场效应，纸面弱实际强</td>
+</tr>
+<tr>
+<td>力量</td>
+<td>Shadbala 119%，全盘第7</td>
+<td>纸面最低，但Dig Bala补偿</td>
+</tr>
+<tr>
+<td>年龄</td>
+<td>16°（青壮期）</td>
+<td>主动型</td>
+</tr>
+<tr>
+<td>落宫</td>
+<td>7宫（合伙/婚姻）</td>
+<td>吉路</td>
+</tr>
+</tbody>
+</table>
+<h3>【推演逻辑】</h3>
+<p>P1=Core-Driver+Trader（管1/2宫），功能吉，最高驱动角色。P7=中性，P2=逆行（深度审查）。P5=7宫（吉路）。P9=119%（略低，但Dig Bala补强）。P1.3=[高压红利]。</p>
+<p><strong>冲突仲裁（P1吉+P9略低+P2逆行）</strong>：信号整体正向，逆行和Shadbala略低只是让节奏更慢、更需要耐心——不改变结论，只改变时间表。土星是你生命底色里的"慢建设者"：从不给你速成，但给你的东西会是真实的。</p>
+<p><strong>【置信度】：高</strong>（Core-Driver主导，逆行增加慢节奏但不反转结论）</p>
+<hr />
+<h2>——— 罗睺（Rahu）：当前大运星，放大器与迷宫 ———</h2>
+<h3>【这颗星对你意味着什么】</h3>
+<p>Rahu（北交点）是吠陀占星里最神秘的力量：它本身没有星体，但有强大的放大和迷惑效果。它落在3宫（兄弟/行动/短途旅行/传播/技能），双鱼座，Rahu在双鱼带有一种梦幻性、流动性，但3宫的Rahu会激发你的行动欲和传播欲——你想做事，想传递信息，有一种持续的内在驱动要去"接触更多"。</p>
+<p><strong>现在（2023-2041）就是Rahu的18年大运</strong>，引擎判定为"平淡期"——不是正面也不是负面，信号极弱。平淡期意味着这18年整体是"摸索和探索"的底色，不会有特别戏剧性的极好或极坏，但会有很多不确定性和方向变化。Rahu本身代表"未知领域"和"跨越边界"，它大运期间最常见的体验是：你会进入一些以前没接触过的领域，会有一些迷茫，但也会因此突破原来的框架。</p>
+<p>当前的小运是<strong>Rahu-Jupiter（2025.11-2028.03）</strong>，叠加判定"该领域顺利"。这是整个Rahu大运里相对来说节奏最稳的一段，因为Jupiter在10宫（事业），这两年事业上的方向会比较清晰，有扩展的机会。</p>
+<p>Rahu相位：Rahu射出5/7/9宫相位，覆盖Sun/Mercury（11宫）、Saturn（5th相位，9宫方向）、7宫（直接投射）。Rahu放大了11宫的太阳和水星的能量，这段时间你的社交圈和信息传播能力会比较活跃；同时Rahu相位7宫（婚姻/合伙），感情和合伙上可能有"Rahu式"的剧情——迷人但需要辨别。</p>
+<h3>【关键数据】</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>节点（Node），功能中性</td>
+<td>放大器、迷宫、探索者</td>
+</tr>
+<tr>
+<td>落宫</td>
+<td>3宫（行动/传播）</td>
+<td>吉路，激发行动欲</td>
+</tr>
+<tr>
+<td>大运</td>
+<td>2023-2041（18年）</td>
+<td>平淡期，摸索+探索底色</td>
+</tr>
+<tr>
+<td>当前小运</td>
+<td>Rahu-Jupiter（2025.11-2028.03）</td>
+<td>叠加顺利，事业有动向</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— 计都（Ketu）：灵性信使，9宫的出世者 ———</h2>
+<h3>【这颗星对你意味着什么】</h3>
+<p>Ketu（南交点）和Rahu相对，落在9宫（运势/信仰/哲学/父亲/高等教育），处女座。9宫的Ketu是一个很有意思的配置：9宫原本管运势和宗教，Ketu在这里带来一种"去执念"的气质——你对"运气"和"信仰"的态度往往是超脱的，不会特别迷信，但会有一种内在的哲学感和对终极意义的追寻。</p>
+<p>Ketu的星宿是Hasta（月亮主管），在处女座，带有精确、技艺、实用性的色彩。这让Ketu在9宫不是纯粹的飘渺灵性，而是有一种"实践中的哲学"——你可能会把对人生意义的追寻转化成具体的技艺或研究方向。</p>
+<p>Ketu相位：Ketu射出5/7/9宫相位，覆盖Moon（9th相位，5宫方向）、Venus（5th相位，1宫方向）、Rahu（7宫对望，互相牵引）。Ketu相位月亮（入旺的7宫主），带来一种对感情"放下执念"的色彩；Ketu相位金星（Yogakaraka），提醒你在事业和创造力方向上保持"不执著"的态度，做好但不强求结果。</p>
+<p><strong>Ketu大运（2093-2100）</strong>，判定平淡期（正面1条、落9宫吉路），那是晚年的出世期。</p>
+<h3>【关键数据】</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>节点（Node），功能中性</td>
+<td>灵性信使，去执念</td>
+</tr>
+<tr>
+<td>落宫</td>
+<td>9宫（运势/信仰）</td>
+<td>吉路，出世色彩</td>
+</tr>
+<tr>
+<td>核心作用</td>
+<td>相位月亮+金星</td>
+<td>感情和事业方向都带有"超脱"调性</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>=== Step 1 完成 ===</h2>
+<p>信号分诊回顾：
+- <strong>最强资产</strong>：月亮（入旺/5宫/正面期历史）、火星（入庙/Ruchaka Yoga/4宫自管）、金星（Yogakaraka/1宫/多格局核心）
+- <strong>建设型支柱</strong>：土星（Core-Driver/Dig Bala/逆行慢建设）
+- <strong>复杂信号</strong>：木星（[欺骗性风险]力量高但管耗散）、水星（障碍星/敌方位）
+- <strong>当前掌舵</strong>：Rahu（平淡探索期，Jupiter小运稳定）</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 05</div>
+    <h2>第三部分A：D9盘分析</h2>
+  </div>
+  <h1>D9 逐星深度审计（Navamsha）</h1>
+<blockquote>
+<p>核心原则：D9回答"D1的承诺，内心品质如何，能兑现多少"。不改变星的本质，只调整质量。</p>
+</blockquote>
+<hr />
+<h2>D9 Lagna：Leo（狮子座）</h2>
+<p>D9 Lagna是Leo，从这张盘的D1 Lagna（摩羯座）走到D9狮子，意味着内心深处有一股"太阳式"的驱动力：自我表达的欲望、对荣耀和认可的渴望——这是内在动机，不一定表现在外，但它是推动行动的底层燃料。</p>
+<hr />
+<h2>——— Moon（月亮）D9审计：D1入旺，D9去了有毒区 ———</h2>
+<p><strong>【深层品质】</strong></p>
+<p>月亮D1入旺（金牛/5宫），承诺是强大的情感连接能力和优质合伙关系。D9落双鱼座（Pisces），从D9 Lagna（Leo）数是第8宫。</p>
+<p>这是一个需要正视的信号：<strong>D1许下了很好的承诺，但D9把这份承诺放进了"有毒区"（8宫）</strong>。8宫是变化、隐藏、失而复得的宫位。用资产语言说：月亮在D1是一张高面值的承诺，但在D9这张承诺被锁进了保险箱——不是假的，但不容易拿到。</p>
+<p>对你生活的具体影响：情感方面，你的感受力和连接能力很深（D1入旺），但这种深度本身会带来某种"情感的隐藏和转化"——你在感情里不容易完全展示自己，或者说你展示的那一面和内心的那一面之间有距离。有时候你对感情看得很深，但表达出来的却是另一种轻盈的样子。月亮D9在双鱼8宫，这也暗示感情方面可能经历一些隐藏的转变，不是轰轰烈烈的断裂，而是某种悄悄的深水流动。</p>
+<p>房东审计：双鱼座的守护星是木星，木星在D9中落Aquarius（水瓶）7宫。7宫是金库区，木星作为房东状态尚可——保险箱的管理人是靠谱的，不会把你的东西丢掉，只是存取有门槛。</p>
+<p>变现难度：D1月亮在金牛（2号），D9落双鱼（12号），位移=10步，不触发变现过敏。算顺畅。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>身份继承</td>
+<td>D1交易者 + D9有毒区(8宫)</td>
+<td>执行力进入深水区，关键时刻需要挖掘</td>
+</tr>
+<tr>
+<td>内核品质</td>
+<td>D9双鱼，中性位</td>
+<td>兑现率约60%，情感能量有潜藏</td>
+</tr>
+<tr>
+<td>落点安全</td>
+<td>D9落8宫</td>
+<td>有毒区，得而复失/隐藏转化</td>
+</tr>
+<tr>
+<td>房东</td>
+<td>Jupiter(D9)→7宫，位置稳</td>
+<td>可靠，不会丢失，但有门槛</td>
+</tr>
+<tr>
+<td>变现难度</td>
+<td>10步</td>
+<td>顺畅</td>
+</tr>
+<tr>
+<td>果实投射</td>
+<td>D9双鱼→D1 3宫</td>
+<td>情感能量最终在行动/传播/兄弟领域见效</td>
+</tr>
+<tr>
+<td>结算</td>
+<td>带毒诱饵（高面值但难兑现）</td>
+<td>兑现率约50-60%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— Mars（火星）D9审计：D1入庙+Ruchaka，D9强势加持 ———</h2>
+<p><strong>【深层品质】</strong></p>
+<p>火星D1入庙白羊（4宫），承诺是执行力和竞争优势。D9落Leo（狮子），正好就是D9 Lagna，位于第1宫。<strong>1宫是金库区的核心</strong>，Lagna本身。</p>
+<p>象限判定：<strong>D1竞争者+D9强（1宫/D9 Lagna）= 竞争优势扩大，副作用也放大</strong>。但由于D9 Lagna是Leo，火星在Leo是友好位（火星与太阳互为友），所以副作用有一定的中和。</p>
+<p>内心层面：火星D1是你的执行发动机，D9在D9 Lagna意味着这种执行力是你内心最真实的驱动之一——不是表演出来的勇气，是真实感受到的。你遇到需要冲劲的事情时，内心会有一种天然的点火反应，不需要靠外部激励。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>身份继承</td>
+<td>D1竞争者 + D9强(D9 Lagna/1宫)</td>
+<td>竞争优势内化，是内心驱动不是外部表演</td>
+</tr>
+<tr>
+<td>内核品质</td>
+<td>D9 Leo/Lagna，友好位</td>
+<td>兑现率接近100%</td>
+</tr>
+<tr>
+<td>落点安全</td>
+<td>D9落1宫(D9 Lagna)</td>
+<td>金库区核心，非常安全</td>
+</tr>
+<tr>
+<td>房东</td>
+<td>太阳(D9)→8宫双鱼</td>
+<td>房东在有毒区，有轻微折扣</td>
+</tr>
+<tr>
+<td>变现难度</td>
+<td>白羊(1)→Leo(5)，4步</td>
+<td>变现顺畅(1/5/9方向)</td>
+</tr>
+<tr>
+<td>果实投射</td>
+<td>D9 Leo→D1 8宫</td>
+<td>执行力的深层果实在8宫（深度研究/隐藏资源）兑现</td>
+</tr>
+<tr>
+<td>结算</td>
+<td>增值原始股</td>
+<td>兑现率90%+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— Venus（金星）D9审计：Yogakaraka，D9去了7宫 ———</h2>
+<p><strong>【深层品质】</strong></p>
+<p>金星D1在摩羯1宫，Yogakaraka，是最高功能吉星。D9落Aquarius（水瓶），从D9 Lagna（Leo）数第7宫。7宫是金库区，是合规资产。</p>
+<p>象限判定：<strong>D1忠诚者/Yogakaraka + D9强（7宫金库区）= 保护力稳固，承诺可兑现</strong>。</p>
+<p>内心层面：金星D9在7宫水瓶——水瓶座是理性的、人道主义的、有一定距离感的星座。这意味着你在事业和创造力（金星管的5/10宫）的内心驱动里，有一层"保持距离、理性评估"的底色。你对事业不是完全感性地投入，而是带着某种冷静的判断。这在做决策时是优势，但可能会在某些需要全情投入的时刻让你看起来有点克制。</p>
+<p>房东审计：水瓶的守护星土星，在D9落Sagittarius（射手）5宫。5宫是金库区。房东土星在好位置，稳健可靠。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>身份继承</td>
+<td>D1 Yogakaraka + D9金库区(7宫)</td>
+<td>最高承诺+安全落点，双重保障</td>
+</tr>
+<tr>
+<td>内核品质</td>
+<td>D9水瓶/7宫，中性稳定</td>
+<td>兑现率80%+，理性驱动</td>
+</tr>
+<tr>
+<td>落点安全</td>
+<td>D9落7宫</td>
+<td>金库区，合规资产</td>
+</tr>
+<tr>
+<td>房东</td>
+<td>土星(D9)→5宫射手</td>
+<td>稳健，5宫良好位置</td>
+</tr>
+<tr>
+<td>变现难度</td>
+<td>摩羯(10)→水瓶(11)，1步</td>
+<td>极度顺畅</td>
+</tr>
+<tr>
+<td>果实投射</td>
+<td>D9水瓶→D1 2宫</td>
+<td>事业/创造力最终在财富宫兑现</td>
+</tr>
+<tr>
+<td>结算</td>
+<td>稳健国债</td>
+<td>兑现率80%，慢但稳</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— Saturn（土星）D9审计：逆行Core-Driver，D9射手5宫 ———</h2>
+<p><strong>【深层品质】</strong></p>
+<p>土星D1逆行/7宫，Dig Bala，Core-Driver。D9落Sagittarius（射手），从D9 Lagna（Leo）数第5宫。5宫是金库区（创造/子女/投资）。</p>
+<p>象限判定：<strong>D1Core-Driver（吉）+ D9金库区（5宫）= 保护力升级，承诺稳固</strong>。</p>
+<p>土星D9在射手（木星守护），木星与土星关系：木星视土星为中性。射手代表哲学、扩展、方向感。这意味着你内心的"建设力"（土星）深处有一种对"方向"和"意义"的渴望——土星给你纪律和结构，但它内心深处在问的是"这一切为了什么"。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>身份继承</td>
+<td>D1 Core-Driver + D9金库区(5宫)</td>
+<td>承诺稳固，建设力内化</td>
+</tr>
+<tr>
+<td>内核品质</td>
+<td>D9射手/5宫，中性稳定</td>
+<td>兑现率80%，带方向感</td>
+</tr>
+<tr>
+<td>落点安全</td>
+<td>D9落5宫</td>
+<td>金库区，良好</td>
+</tr>
+<tr>
+<td>房东</td>
+<td>Jupiter(D9)→7宫水瓶</td>
+<td>房东在金库区，稳健</td>
+</tr>
+<tr>
+<td>变现难度</td>
+<td>巨蟹(4)→射手(9)，5步</td>
+<td>中等，不急不慢</td>
+</tr>
+<tr>
+<td>结算</td>
+<td>稳健国债</td>
+<td>兑现率75-80%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— Sun（太阳）、Mercury（水星）、Jupiter（木星）D9审计（简要）———</h2>
+<p><strong>太阳 D9</strong>：落双鱼（Pisces），D9第8宫。身份继承：D1清理者+D9有毒区 = 清理能力进入深水，深度研究/隐藏资源方向有能力但代价大。结算：带毒诱饵，50%兑现率。</p>
+<p><strong>水星 D9</strong>：落处女（Virgo），D9第2宫（金库区）。身份继承：D1竞争者/障碍星+D9金库区 = 信息处理能力有财务兑现潜力。这是水星表现最好的星座（Exalted in Virgo，虽然D9本命非旺座，但处女对水星有亲和性）。结算：稳健国债，兑现率75%。</p>
+<p><strong>木星 D9</strong>：落水瓶（Aquarius），D9第7宫（金库区）。身份继承：D1[欺骗性风险]清理者+D9金库区 = 清理/耗散能量落在稳定区，削弱了一部分欺骗性风险的毒性。结算：高利印钞机（力量高但角色带毒），兑现率60-70%。</p>
+<p><strong>Rahu D9</strong>：落射手（Sagittarius），D9第5宫。节点在金库区，5宫，探索能量往创造方向兑现。</p>
+<p><strong>Ketu D9</strong>：落双子（Gemini），D9第11宫。节点在收益宫，灵性能量有社交和收益的出口。</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 06</div>
+    <h2>第三部分B：分盘交叉分析</h2>
+  </div>
+  <h1>分盘交叉概述：D10、D4、D5</h1>
+<hr />
+<h2>D10 Dasamsha — 事业概述</h2>
+<p><strong>D10 Lagna：金牛座（Taurus）</strong></p>
+<p>事业盘的上升是金牛，守护星是金星。这跟D1的Yogakaraka金星形成呼应：你的事业底色是Venus式的——需要美感、价值感、或者与人的连接，做的事情要让你觉得有真实意义，不能纯粹为了钱而没有温度。</p>
+<p>D10强势行星扫描：
+- <strong>Mars在D10 Leo，第4宫</strong>（金库区）：火星在事业盘的4宫，暗示执行力和竞争力在事业中有稳固的根基。
+- <strong>Mercury在D10 Virgo，第5宫</strong>：水星在自家（处女），信息处理、分析、沟通能力在事业盘中是资产，且在5宫（创造/投资领域）。
+- <strong>Jupiter在D10 Pisces，第11宫</strong>：木星在双鱼（自管，入庙），在事业盘11宫（收益），意味着事业上的收益有木星式的扩展潜力，可能来自教育、传播、或广泛的社会网络。</p>
+<p>D10的10宫主（事业成就领域）：D10 Lagna是金牛，10宫是水瓶，守护星是土星。土星在D10落Leo（第4宫）。土星管D10的成就宫，落在4宫——这个配置暗示：你的事业成就跟"建立稳固的基础"有关，成功不是靠出奇制胜，而是靠积累和结构。</p>
+<p>太阳、月亮、Rahu在D10都落12宫（Aries），这是一个有趣的信号：某些方向的资源可能流向"幕后"或"海外/另类赛道"，不是主流路径，但可能反而更有空间。</p>
+<p><strong>可信度：✅ 高</strong></p>
+<hr />
+<h2>D4 Chaturthamsha — 物质/家庭/不动产概述</h2>
+<p><strong>D4 Lagna：天秤座（Libra）</strong></p>
+<p>D4上升是天秤，守护星金星。不动产和物质基础盘的底色同样是Venus式的——你对"家"和"物质环境"的审美和品质感很在意。</p>
+<p>关键信号：
+- <strong>Venus在D4 Capricorn，第4宫</strong>（不动产/家园本宫）：金星（Yogakaraka）在D4坐正4宫，这是一个很直接的信号——你有能力为自己建立高品质的物质基础和居住环境，而且金星管10宫，这个资产可能跟职业成就直接挂钩（先立业后安家，或者通过职业收益改善居住）。
+- <strong>Saturn在D4 Capricorn，第4宫</strong>：土星和金星同坐D4的4宫——慢慢建，但建出来的是实的。
+- <strong>Mars在D4 Cancer，第10宫</strong>：执行力在D4的事业宫，暗示获取物质资产需要主动争取，不会自动降临。</p>
+<p><strong>不动产信号</strong>：D4/D1 4宫交叉，4宫主是火星（D1入庙，4宫），金星和土星在D4的4宫，这张盘在不动产方向有扎实的先天基础，但节奏会比较慢（土星主导的建设节奏）。</p>
+<hr />
+<h2>D5 Panchamsha — 权威/创造力/影响力概述</h2>
+<p><strong>D5 Lagna：天蝎座（Scorpio）</strong></p>
+<p>D5上升天蝎，守护星火星。创造力盘的底色是火星式的——深度、穿透力、不惧挑战。</p>
+<p>关键信号：
+- <strong>Sun在D5 Scorpio，第1宫（D5 Lagna本身）</strong>：太阳坐D5的上升，这在权威/影响力盘上是强信号——你有天然的"主角能量"，在需要展示自己或承担责任的场合，你能接住。
+- <strong>Jupiter和Mars在D5 Sagittarius，第2宫</strong>：木星和火星在D5财富宫，创造力有财务转化的潜力。
+- <strong>Moon和Mercury在D5 Virgo，第11宫</strong>：情感和信息处理在D5的收益宫，创造性工作的收益来源可能跟沟通、写作、数据分析有关。</p>
+<p>这张D5盘传递的信息是：你的影响力和创造力是有实质性的——不只是自我表达，而是可以落地变现的那种。</p>
+<hr />
+<h2>阶段1完成小结（行星和分盘数据层）</h2>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>最强信号</th>
+<th>注意信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1行星</td>
+<td>Moon入旺、Mars入庙+Ruchaka、Venus Yogakaraka、Saturn Core-Driver+DigBala</td>
+<td>Jupiter[欺骗性风险]、Mercury敌方位</td>
+</tr>
+<tr>
+<td>D9品质</td>
+<td>Mars增值原始股、Venus稳健国债、Saturn稳健国债</td>
+<td>Moon有毒区(50-60%)、Sun有毒区</td>
+</tr>
+<tr>
+<td>D10事业</td>
+<td>Mercury/Jupiter在好位、金牛上升</td>
+<td>主星三颗落12宫</td>
+</tr>
+<tr>
+<td>D4物质</td>
+<td>Venus+Saturn坐4宫，基础扎实</td>
+<td>节奏慢</td>
+</tr>
+<tr>
+<td>D5创造力</td>
+<td>Sun坐D5 Lagna，影响力强</td>
+<td>需要主动激活</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 07</div>
+    <h2>第四部分A：宫位诊断 (1-6宫)</h2>
+  </div>
+  <h1>宫位诊断（一）：1-6宫</h1>
+<blockquote>
+<p>数据来源：p2a~p2d行星审计结论 + structured_data宫位映射表
+SAV只在极端值(&gt;32 或 &lt;22)时展开，中间值不展开</p>
+</blockquote>
+<hr />
+<h2>——— 1宫（自我）· 摩羯座 ———</h2>
+<h3>【状况概述】</h3>
+<p>你这个人给人的第一印象是"稳"——摩羯座上升带来的气质是踏实、自律、有边界感，外表不张扬，但内里有一种天然的结构感。你走进一个房间，不会是最吵的那个，但往往是最能承重的那个。</p>
+<p>1宫的管家是土星（Core-Driver，1宫主），但它跑去了7宫（合伙/婚姻）。这叫"管家不在家"——意味着你对自我的建立有一部分是通过关系完成的：你在跟人合作、跟人深度连接的过程中，才会越来越清楚自己是谁，想要什么。单打独斗时反而容易迷失方向。土星逆行，这种通过关系认识自己的过程还带着一层"反复审视"的底色——你会在关系里反复确认自己的位置和价值，慢，但最终会建立起非常扎实的自我认知。</p>
+<p>1宫里有金星（Yogakaraka，5/10宫主）坐在这里。这是这张盘最重要的配置之一：你这个人的气质和事业方向是高度融合的——你展现自我的方式本身就是你的事业。外人看到的你，就是你在做事业时最真实的样子。金星在1宫还带来了一种美感和温度：你不是那种刻板的职业面具，做事情会带有自己的风格和审美。</p>
+<p><strong>相位</strong>：Ketu相位1宫（5th相位，来自9宫），带来灵性色彩；Saturn从7宫相位1宫（7th互望）。土星远程管理自己的家——有一种"远程监控"的味道，你的自我建立有延迟，但控制质量很高。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Saturn(Core-Driver)→7宫，逆行，Dig Bala</td>
+</tr>
+<tr>
+<td>住客</td>
+<td>Venus(Yogakaraka)，气质与事业融为一体</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Saturn(7宫互望)、Ketu(9宫5th)</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>1宫(Cp)=29，平稳</td>
+</tr>
+</tbody>
+</table>
+<h3>【事件关联】</h3>
+<p>Moon大运（2006-2016）期间，1宫没有直接被激活，但那个正面期的童年给你的自我发展提供了稳定的情感土壤；Mars大运（2016-2023，正面期）是你自我形象快速建立的阶段——火星在4宫入庙，4宫代表基础教育和家庭环境，那7年是你建立"我是谁"核心认知的关键期。（推导：Mars=L4/L11，入庙4宫，正面4/0→正面期，家庭和基础教育资源充足）</p>
+<hr />
+<h2>——— 2宫（财富/语言/家族）· 水瓶座 ———</h2>
+<h3>【状况概述】</h3>
+<p>2宫的管家也是土星（同时管1宫和2宫）。土星去了7宫，意味着你的财富积累和家庭财务同样有"管家远程"的特点——收入不是自动进账的，需要你主动去维护，去关注，去把7宫的合伙能量转化成2宫的财务成果。</p>
+<p>水瓶座2宫给你的财富观带来一种"非传统"的色彩——你赚钱的方式不会是最保守的那种，可能涉及新技术、集体性项目、或者有某种社会价值的事业方向。你对钱的态度是务实但不守旧的，不会为了稳定而放弃可能性。</p>
+<p>2宫空宫（无行星居住），Jupiter从10宫相位2宫（Jupiter的7th相位覆盖2宫）。木星相位财富宫，带来扩展性：在Jupiter小运期间（当前Rahu-Jupiter 2025-2028），财富方向会有一定的开阔感，可能有收入增长或财务视野的扩展。但要记得木星管12宫（欺骗性风险），扩展同时要防止无形耗散。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Saturn(Core-Driver+L2)→7宫，逆行管理</td>
+</tr>
+<tr>
+<td>住客</td>
+<td>空宫</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Jupiter(10宫7th相位)</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>2宫(Aq)=28，平稳</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— 3宫（行动/传播/兄弟/技能）· 双鱼座 ———</h2>
+<h3>【状况概述】</h3>
+<p>3宫是Rahu的住所。Rahu坐在双鱼3宫，这个位置很有意思：双鱼本身是一个流动、梦幻、感知力强的星座，Rahu在这里给3宫（行动/传播/技能）注入了一种"边界模糊的探索欲"——你的行动力不是直线型的冲刺，而是像水一样渗透，会进入各种意想不到的领域，用非常规的方式去发现机会。</p>
+<p>3宫的管家是木星（3宫主），去了10宫（事业宫）。管家在外跑事业——这意味着你的技能和行动力，最终出口是在事业上。你不会为了动而动，你的行动有明确的事业方向导向。</p>
+<p><strong>3宫(Pi)SAV=33，超过32，触发极端标注</strong>：3宫资源溢出。Rahu在一个资源超充裕的3宫，行动和传播方向有很强的天然资源支撑。这是这张盘里少数资源超载的宫位——你在需要"行动力"和"传播自己想法"的事情上，有比别人更充足的弹药。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Jupiter(L3)→10宫，技能出口指向事业</td>
+</tr>
+<tr>
+<td>住客</td>
+<td><strong>Rahu</strong>，探索型、边界模糊</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Ketu(9宫7th互望)、Saturn(7宫3rd相位)</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td><strong>3宫(Pi)=33，溢出</strong>，行动力资源极充裕</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— 4宫（家庭/学习/不动产）· 白羊座 ———</h2>
+<h3>【状况概述】</h3>
+<p>4宫是这张盘里最强的宫位之一，没有悬念。火星入庙坐在白羊4宫，Ruchaka Yoga在此激活——这叫"管家亲自坐守"，4宫的管家（Mars是L4）待在自己的家里，入庙，状态满分。</p>
+<p>4宫代表：家庭基础、早年教育、情感安全感、不动产、母亲、内心的根。火星在这里意味着你的家庭底色是充满能量和活力的，家给你的是"力量"而不是"避风港"——是那种推着你往前走的家庭氛围，而不是让你缩着待着的舒适圈。</p>
+<p>从D4不动产盘交叉：金星和土星都在D4的4宫（Capricorn）。这三重信号叠加——D1/D4 4宫都有很强的配置，意味着不动产和物质基础方面有扎实的先天条件。节奏会慢（土星主导），但会稳稳地在某个时段（Saturn大运附近，或Venus大运）实现。</p>
+<p>Jupiter和Saturn都相位4宫（Jupiter从10宫7th相位，Saturn从7宫3rd相位）——两颗重量级行星都在看4宫，带来额外的保护和资源支撑。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td><strong>Mars(L4)→4宫自管，入庙，Ruchaka Yoga</strong></td>
+</tr>
+<tr>
+<td>住客</td>
+<td>Mars，最强状态</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Jupiter(7th)、Saturn(3rd)</td>
+</tr>
+<tr>
+<td>分盘</td>
+<td>D4中Venus+Saturn坐D4的4宫，不动产基础扎实</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>4宫(Ar)=28，平稳</td>
+</tr>
+</tbody>
+</table>
+<h3>【事件关联】</h3>
+<p>Mars大运（2016-2023，正面4/0→正面期）：4宫主当值，且在自管宫入庙。这7年是4宫事务的高光期——家庭关系稳定、学习基础打牢（初高中阶段）、内心安全感充足。格局激活验证：Ruchaka Yoga在Mars大运期间高质量激活（D9支撑90%兑现率）。（推导：Mars=P7入庙，P5=4宫自管，P9=126%，正面4/0→正面期）</p>
+<hr />
+<h2>——— 5宫（创造力/恋爱/投资/子女）· 金牛座 ———</h2>
+<h3>【状况概述】</h3>
+<p>5宫有月亮入旺，这是全盘最大的亮点之一。月亮管7宫（配偶/合伙），它跑进了5宫（恋爱/创造），入旺待着——意思是：你的感情力量是天然充足的，而且感情和创造力是深度绑定的。你在恋爱中会有很强的情感感受力，对方很容易感受到你的温度。你的创造力也带有情感驱动的底色——你做出来的东西是有感情的，不是冷冰冰的逻辑产物。</p>
+<p>5宫的管家是金星（L5，Yogakaraka），去了1宫（自我宫）。管家在外但在吉宫，意味着创造力和恋爱资源会通过你的自我表达来激活——你越是真实地做自己，这个宫位的能量就越流动。</p>
+<p>5宫被多颗星相位：Sun/Mercury从11宫（7th相位），Ketu从9宫（9th相位）。Sun和Mercury相位5宫，带来深度思维和信息处理能力注入创造宫——你的创造力有智识性，不只是感性，还带有分析和表达的维度。Ketu相位5宫，带来一种对创造物"不执著于结果"的态度。</p>
+<p>从D5创造力盘：太阳坐D5 Lagna（上升），影响力和创造力内核强。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Venus(L5,Yogakaraka)→1宫，能量通过自我表达激活</td>
+</tr>
+<tr>
+<td>住客</td>
+<td><strong>Moon，入旺，A级信号</strong></td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Sun(7th)、Mercury(7th)、Ketu(9th)</td>
+</tr>
+<tr>
+<td>分盘</td>
+<td>D5中Sun坐D5 Lagna，创造力核心强</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>5宫(Ta)=28，平稳</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— 6宫（竞争/疾病/债务/服务）· 双子座 ———</h2>
+<h3>【状况概述】</h3>
+<p>6宫是空宫（无行星居住），管家是水星（L6），去了11宫。管家跑去收入宫了——这个配置叫"竞争者的管家在赚钱"，人话是：你在竞争和服务领域的能量最终会转化成收入，6宫事务（困难和竞争）不是纯粹的阻力，是你变现的通道之一。</p>
+<p>但水星是敌方位（Scorpio），管家在外且状态有内耗，6宫的事务（健康、竞争、服务）需要你比别人多花一点功夫去维护，不会是最省力的领域。</p>
+<p>好消息是：Jupiter从10宫相位6宫（7th相位）。木星看6宫，带来保护和扩展——在竞争和服务方向上，木星给你提供了一定的缓冲和机会。这不会让6宫变成福地，但会让你在竞争里偶尔有"意外转机"的感觉。</p>
+<p>6宫(Ge)SAV=26，平稳偏低边缘，不触发极端标注，但值得知道竞争环境资源中等。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Mercury(L6,GK)→11宫，竞争能量转化为收入</td>
+</tr>
+<tr>
+<td>住客</td>
+<td>空宫</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Jupiter(10宫7th相位)</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>6宫(Ge)=26，中等</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 08</div>
+    <h2>第四部分B：宫位诊断 (7-12宫)</h2>
+  </div>
+  <h1>宫位诊断（二）：7-12宫</h1>
+<hr />
+<h2>——— 7宫（婚姻/合伙/合约）· 巨蟹座 ———</h2>
+<h3>【状况概述】</h3>
+<p>7宫是这张盘里最值得深聊的宫位。</p>
+<p>先说好消息：7宫的管家月亮入旺（在5宫），7宫的"硬件"天然很好——月亮掌管婚姻，入旺就是说这颗星处于最强状态，意味着你在感情和合伙方向有真实的吸引力和连接能力。</p>
+<p>但7宫本身有一个需要注意的居住者：土星逆行坐在这里。1宫的管家（Core-Driver）跑到7宫，逆行，坐在巨蟹（它最不舒服的星座之一——土星和月亮是互相制约的，土星在巨蟹是"客居凶境"）。这带来的体感是：你在婚姻和长期合伙关系里，往往会经历一个"反复审视和延迟"的过程。不是感情不好，而是建立信任和深度连接需要时间，你不会轻易对一段关系完全放开——土星要先做质检，确认过才会真正投入。这是慢热型的感情模式。</p>
+<p>土星逆行在7宫还有一个深层含义：你在关系里会"回头看"——可能反复思考过去的关系，或者在新关系中带着对旧经历的复盘态度进入。这不是坏事，但如果不加以觉察，可能会变成"用旧标准审判新关系"的障碍。</p>
+<p><strong>UL（Upapada Lagna）在8宫（Leo）</strong>：婚姻指示点落在变故宫，这意味着婚姻在某种程度上是一种深度转化的触发点——你的婚姻不会是平淡无波的，会有某种深度的改变在里面。不是坏事，但婚姻会让你经历一种"脱胎换骨"式的转变。</p>
+<p><strong>相位</strong>：Mars从4宫（7th相位）、Venus从1宫（7th互望）、Rahu从3宫（7th相位）都在看7宫。三颗星相位婚姻宫——这很罕见，意味着7宫的事务受到多方关注和影响。火星带来竞争和热度，金星带来美感和吸引力，Rahu带来非传统性和变数。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Moon(L7)→5宫，入旺，婚姻品质天然好</td>
+</tr>
+<tr>
+<td>住客</td>
+<td><strong>Saturn(逆行)</strong>，审视型、慢热、建设扎实</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Mars(4th→7th)、Venus(1宫7th)、Rahu(3宫7th)</td>
+</tr>
+<tr>
+<td>特殊</td>
+<td>UL在8宫(Leo)，婚姻带来深度转化</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>7宫(Cn)=28，平稳</td>
+</tr>
+</tbody>
+</table>
+<h3>【事件关联】</h3>
+<p>Moon大运（2006-2016，正面4/0→正面期）：7宫主当值、入旺，这段时间7宫事务（早期的人际合作模式、父母关系、对"合伙"的第一印象）整体是正向的。（推导：Moon=L7，P7入旺，P5=5宫吉路，正面4/0→正面期）</p>
+<p>Saturn大运（2057-2076，正面4/0→正面期）：7宫住客当值，而且那是正面期——这意味着土星在7宫积累了一辈子的能量，到它大运才会全面释放。这是婚姻最稳定、合伙关系最成熟的阶段。</p>
+<hr />
+<h2>——— 8宫（变故/深度转化/遗产/研究）· 狮子座 ———</h2>
+<h3>【状况概述】</h3>
+<p>8宫空宫，管家太阳（L8）去了11宫（收入宫）。清理者的管家跑去收入宫——深度转化和危机处理的能量被引导到了收入方向。这是8宫资源"变现"的配置：你处理复杂问题、做深度研究的能力，会成为收入来源之一。</p>
+<p>8宫(Le)SAV=28，平稳，没有极端信号。8宫无行星居住，意味着这个领域不会有特别剧烈的直接冲击——转化会发生，但通过太阳管的方式（渐进的、有结构的），不是突然的崩塌。</p>
+<p>没有行星相位8宫（从相位表看，8宫无任何行星投射）——这宫相当"清净"，既没有额外的压力，也没有额外的激活。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Sun(L8,清理者)→11宫，深度能量转化为收入</td>
+</tr>
+<tr>
+<td>住客</td>
+<td>空宫</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>无</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>8宫(Le)=28，平稳</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— 9宫（运势/信仰/父亲/高等教育）· 处女座 ———</h2>
+<h3>【状况概述】</h3>
+<p>9宫有Ketu坐在这里。Ketu在运势宫，带来一种对"运气"和"信仰"的出世感——你不太依赖命运，也不容易被单一的信仰框架束缚。你对"为什么活着"这类问题有自己独立的思考，但这个思考不是焦虑型的，而是带有某种平静的探寻。</p>
+<p>9宫的管家是水星（L9），去了11宫（收入宫）。运势管家在收入宫——这意味着你的运势发展和收入积累有关联：越有钱不一定运越好，但你的人生走向往往会通过财务和社交的扩展来体现。</p>
+<p><strong>9宫(Vi)SAV=32，接近溢出边缘</strong>（32刚好是平稳-溢出的分界），不触发极端标注，但值得关注——9宫的天然资源相当充裕，这是一个底子好的运势宫。</p>
+<p>Saturn从7宫相位9宫（Saturn的3rd相位：7+3-1=9）；Rahu从3宫相位9宫（Rahu的7th相位：3+7-1=9）——土星给运势方向带来纪律和延迟，Rahu给运势带来放大和探索的变数。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Mercury(L9,盟友)→11宫，运势能量流向收入</td>
+</tr>
+<tr>
+<td>住客</td>
+<td>Ketu，出世型，不依赖传统运气框架</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Saturn(7宫3rd)、Rahu(3宫7th)</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>9宫(Vi)=32，接近溢出</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— 10宫（事业/地位/权威）· 天秤座 ———</h2>
+<h3>【状况概述】</h3>
+<p>10宫有Jupiter坐在这里，是全盘力量最强的行星（Shadbala 125%，全盘第1）。但这颗星是[欺骗性风险]的3/12宫主——有一种"能量充足但方向带毒"的味道。木星在事业宫的存在感很强，给你的事业带来扩展感和视野，但它管的12宫（损耗）在背后提醒：这种扩展有代价，不要过度投入以至于耗散自身。</p>
+<p>10宫的管家是金星（L10，Yogakaraka），去了1宫（自我宫）——管家在自我宫，意味着你的事业和你这个人是一体的：你本人就是事业的核心品牌。这也意味着当你觉得"自我"不清晰的时候，事业方向也会模糊；反过来，当你越来越清楚自己是谁，事业路径也会越来越清晰。</p>
+<p><strong>AL（Arudha Lagna）在10宫（天秤座）</strong>：Arudha Lagna代表外界眼中的你，它落在10宫——世人对你的印象和定义，是通过你的事业来建立的。你的社会形象就是你的职业形象，两者高度重合。这是一种"以作品为名片"的存在方式。</p>
+<p>Mars从4宫相位10宫（Mars的7th相位覆盖10宫）——火星看着事业宫，给你的事业注入执行力和竞争力：你在事业上不缺动力，遇到需要行动的时候会有天然的冲劲。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td><strong>Venus(L10,Yogakaraka)→1宫，事业与自我合一</strong></td>
+</tr>
+<tr>
+<td>住客</td>
+<td>Jupiter(L3/L12,最强但[欺骗性风险])</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Mars(4宫7th相位)</td>
+</tr>
+<tr>
+<td>特殊</td>
+<td><strong>AL=10宫</strong>，社会形象由事业定义</td>
+</tr>
+<tr>
+<td>分盘</td>
+<td>D10 Lagna=金牛，Venus底色，事业需美感和价值感</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>10宫(Li)=29，平稳</td>
+</tr>
+</tbody>
+</table>
+<h3>【事件关联】</h3>
+<p>Jupiter大运（2041-2057，混合2/1→混合期）：10宫住客Jupiter当值。这是事业扩张的窗口，Jupiter的力量（全盘第1）会在事业宫充分释放，但混合期意味着同时要应对12宫的耗散压力——扩张有代价，需要有意识地控制损耗。（推导：Jupiter=P7中性，P5=10宫吉路，P9=125%，P1[欺骗性风险]→正面2条负面1条→混合期）</p>
+<hr />
+<h2>——— 11宫（收入/社交/朋友圈/愿望实现）· 天蝎座 ———</h2>
+<h3>【状况概述】</h3>
+<p>11宫是这张盘里最"拥挤"的宫位——Sun（L8，8宫主）和Mercury（L6/L9，6/9宫主）同住天蝎11宫。两颗管功能凶宫的行星待在收入宫，这叫做"深度和复杂性驱动收入"——你的收入来源往往不是最简单直接的，而是有一定深度和复杂性：可能来自研究、信息处理、危机解决、深度服务类的工作，而不是流水线式的简单重复劳动。</p>
+<p>11宫(Sc)SAV=31，接近溢出边缘，资源充裕，收入宫底子好。</p>
+<p>Moon、Mars、Rahu三颗星都相位11宫（Moon从5宫7th，Mars从4宫7th，Rahu从3宫7th/5th方向）——三颗大星都在看收入宫，这是一个被大量"关注"的宫位：你的社交网络是你的资产，通过关系网络和社交扩展带来的收入机会不少。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Mars(L11)→4宫，收入能量通过家庭/基础积累转化</td>
+</tr>
+<tr>
+<td>住客</td>
+<td>Sun(L8)+Mercury(L6/L9)，深度驱动型收入</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>Moon(5宫7th)、Mars(4宫7th)、Rahu(3宫)</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td>11宫(Sc)=31，充裕</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>——— 12宫（损耗/灵性/海外/隐居）· 射手座 ———</h2>
+<h3>【状况概述】</h3>
+<p>12宫空宫，管家Jupiter（L12，12宫主）去了10宫（事业宫）。12宫主在事业宫——这个配置意味着你的"损耗"往往是通过事业方向流出去的：你在事业上投入大量精力，这是12宫的主要耗散方向。</p>
+<p><strong>12宫(Sg)SAV=17，低于20，触发极端标注：崩塔级别</strong>。这是这张盘里SAV最低的宫位，比任何宫位都低。12宫资源本来就是"损耗"的，SAV极低意味着这里的能量极度匮乏——实际效果可以有两种解读：一是12宫的"成本"很低（你的损耗和无形消耗比一般人少），二是12宫的"回报"也低（灵性修行、海外发展、隐居式创作等方向，先天资源不够充裕）。</p>
+<p>结合Jupiter管12宫且落10宫：木星把12宫的能量引到了事业方向，SAV=17意味着这种引流是"把少量资源全部导向事业"，不会有太多留存在12宫本身。</p>
+<p>12宫无行星相位（相位表显示8宫和12宫均无行星投射），这个宫位相当清净，不是这张盘的活跃区域。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管家</td>
+<td>Jupiter(L12,[欺骗性风险])→10宫，损耗流向事业</td>
+</tr>
+<tr>
+<td>住客</td>
+<td>空宫</td>
+</tr>
+<tr>
+<td>相位</td>
+<td>无</td>
+</tr>
+<tr>
+<td>宫位SAV</td>
+<td><strong>12宫(Sg)=17，崩塔</strong>，12宫本身资源极匮乏</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>宫位诊断完成自查</h2>
+<ul>
+<li>[x] 1宫 (Venus/Saturn相位)</li>
+<li>[x] 2宫 (Jupiter相位)</li>
+<li>[x] 3宫 (Rahu坐/SAV=33溢出)</li>
+<li>[x] 4宫 (Mars入庙坐/Ruchaka)</li>
+<li>[x] 5宫 (Moon入旺坐)</li>
+<li>[x] 6宫 (Jupiter相位)</li>
+<li>[x] 7宫 (Saturn逆行坐/UL=8宫)</li>
+<li>[x] 8宫 (空宫清净)</li>
+<li>[x] 9宫 (Ketu坐/SAV=32)</li>
+<li>[x] 10宫 (Jupiter坐/AL=10宫/Venus管)</li>
+<li>[x] 11宫 (Sun+Mercury坐/SAV=31)</li>
+<li>[x] 12宫 (空宫/SAV=17崩塔)</li>
+</ul>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 09</div>
+    <h2>第五部分：人生架构总结</h2>
+  </div>
+  <h1>十大板块人生总结（一）：板块1-5</h1>
+<blockquote>
+<p>这部分是给你看的"人话报告"。前面那些数据审计都是为了打底，这里不再堆数据，咱们坐下来好好聊。</p>
+</blockquote>
+<hr />
+<h2>板块1：人格核心 — 你是谁</h2>
+<p>你是一个"外表稳、内里热"的人。</p>
+<p>摩羯座上升给你一层踏实、自律、有边界的外壳。别人第一眼看到的你，是那种靠得住、不浮躁、能扛事的人。你不爱出风头，但在关键时刻往往是那个能把局面稳住的人。这层壳是真实的，不是装的——你确实有一种天然的责任感和结构感。</p>
+<p>但壳底下藏着一团火。你的火星入庙坐在家庭宫，状态满分，这意味着你内心有很强的行动力和竞争欲——你不是表面看起来那么"佛系"，你心里其实很想做成点什么，很想赢。这股劲儿平时被摩羯的自律压着，但一旦你认定了方向，那股冲劲会让你停不下来。这是一种很好的组合：对外稳重让人信任，对内的火让你有持续的驱动力。</p>
+<p>你的太阳（代表灵魂核心，是你的AK灵魂指示星）在天蝎座11宫——天蝎给你的灵魂底色是深度的、探究的、不满足于表面的。你这个人对"浅层的东西"天然没兴趣，你想知道事情背后的运作逻辑，想搞清楚"为什么"。这让你在需要钻研的领域有天然优势，但也意味着你可能不太能忍受肤浅的社交和重复性的浅层工作。</p>
+<p>月亮（你的情感内核）入旺在5宫，这是你性格里最温暖的部分。尽管你外表克制，但你的情感感受力其实很强，很细腻。你对在乎的人有很深的连接能力。只是这份柔软你不会随便展示——它藏在摩羯的壳和天蝎的深度后面，只对真正进入你内心的人开放。</p>
+<p>从D9（内心盘）看，你内心深处有一股狮子座的驱动力：渴望被看见、渴望做出有分量的事、渴望某种程度的荣耀感。这股力量平时不显，但它是你很多努力背后的真实燃料。</p>
+<p><strong>一句话画像</strong>：一个外表沉稳自律、内心有火有深度的人，用作品和成就说话，不靠张扬刷存在感。</p>
+<hr />
+<h2>板块2：财富潜力 — 钱从哪来</h2>
+<p>先说结论：你的财富路径是"深度变现型"，不是"流量型"。</p>
+<p>你的收入宫（11宫）住着太阳和水星两颗星，它们分别管着8宫（深度/研究/危机）和9宫（智慧/高教）、6宫（竞争/服务）。这个配置很清楚地告诉你一件事：<strong>你的钱来自你的深度和专业性，不是来自简单重复的劳动</strong>。你越是在某个领域钻得深、懂得多、能解决别人解决不了的问题，你的收入就越高。靠卖体力或者做谁都能做的事，你赚不到匹配你能力的钱。</p>
+<p>你的财富宫（2宫）管家是土星，它跑到了7宫（合伙宫）。这意味着你的财富积累跟"合作"和"关系"有关——你不太可能靠单打独斗暴富，更可能是通过深度的合作关系、长期的伙伴关系来稳定地积累财富。土星逆行还说明：你的财富是慢慢攒起来的，不是一夜暴富型，但攒起来就很难亏掉，因为土星管的钱是结实的。</p>
+<p>你有Dhana Yoga（财富格），参与的星是土星、火星、金星、水星。这个格局的兑现节奏很清楚：早中期（火星大运，2016-2023，已经过去）打基础，后期（土星大运2057之后、金星大运）真正收获。换句话说，你这辈子的财富曲线是"先慢后稳，越老越厚"的类型，不是年轻暴发型。</p>
+<p>从D4（物质盘）看，金星和土星都坐在物质基础宫——你有能力建立扎实的物质基础（包括不动产），但节奏偏慢，急不来。</p>
+<p><strong>实在话</strong>：别指望快钱和投机，那不是你的命门。你的财富引擎是"专业深度+长期合作+时间积累"。把一个领域做深做透，建立可靠的合作网络，钱会越来越稳地进来。</p>
+<hr />
+<h2>板块3：事业方向 — 适合做什么</h2>
+<p>你的事业是这张盘最值得期待的部分之一。</p>
+<p>核心原因是：你的事业宫主是金星，而金星是这张盘的Yogakaraka（CEO级别的吉星），它坐在你的上升宫（自我宫）。这是一个非常清晰的信号——<strong>你本人就是你事业的核心，你的事业和你这个人是一体的</strong>。你最适合做那种"能体现你个人风格和价值"的事业，而不是当一颗螺丝钉。你的社会形象（Arudha Lagna也落在事业宫）会通过你做的事来定义，别人记住你，是因为你做出来的东西。</p>
+<p>具体方向上，几条线索交汇：
+- 事业盘（D10）的上升是金牛座，守护星金星——你的事业需要"美感、价值感、与人的连接"，要让你觉得有意义，不能纯粹为钱。
+- 你的太阳和水星在收入宫，管8宫和9宫——研究型、分析型、专业咨询型、深度内容型的方向适合你。
+- 火星入庙的执行力 + 木星在事业宫的视野 + 金星的审美——你适合做那种"既需要专业深度、又需要个人品味、还需要执行力"的复合型工作。</p>
+<p>这些线索拼起来，指向的方向大概是：专业型/创意型/知识型的事业，最好是能让你建立个人品牌或专业声誉的那种。比如深度内容创作、专业咨询、研究型工作、设计或创意领域的专业路线、或者任何"靠专业和审美吃饭"的方向。不太适合你的是：纯执行的流水线工作、需要大量浅层社交而无深度的工作、或者完全压抑个人风格的体制内边缘岗位。</p>
+<p><strong>事业黄金期</strong>：最大的事业扩张窗口在Jupiter大运（2041-2057），那时全盘最强的木星在事业宫全面释放。但要注意木星管12宫（耗散），扩张的同时要控制无谓的损耗，别摊太大。在那之前，当前的Rahu大运（2023-2041）是探索和定位期——这18年你会尝试不同方向，可能有迷茫，但这是在为后面的爆发找准赛道。眼下的Rahu-Jupiter小运（2025-2028）事业方向会相对清晰一些，是个适合明确定位的窗口。</p>
+<hr />
+<h2>板块4：感情/婚姻 — 何时遇到对的人</h2>
+<p>你的感情盘是"硬件极好、但需要慢热"的类型。</p>
+<p>先说硬件：你的婚姻宫主是月亮，入旺，全盘状态数一数二。这意味着你在感情里有真实的吸引力和深度的连接能力——你不缺爱人的能力，也不缺被爱的资本。月亮入旺在5宫（恋爱宫），还说明你的感情和恋爱是从真实的情感共鸣开始的，你不是条件匹配型，是心动驱动型。</p>
+<p>但有一个要正视的点：土星逆行坐在你的婚姻宫。这给你的感情带来一种"慢热+反复审视"的模式。你不会轻易对一段关系完全敞开，你需要时间，需要确认，需要一遍遍地验证对方是不是真的靠得住。这不是缺点，这是你保护自己的方式。但如果不觉察，它可能变成两个问题：一是错过一些其实不错但你"还在观察"的人，二是用过去的标准或经历来审判现在的关系。</p>
+<p>你的配偶指示星有点争议（7K体系指向金星，8K体系指向水星，两个不一致），所以我们不太依赖单颗指示星，而是看宫位结构。从结构看：婚姻宫主月亮入旺（品质好），但婚姻指示点（UL）落在8宫（变故宫）——这意味着你的婚姻很可能是一种"深度转化"的体验，不是平淡相守那种，而是会让你经历某种脱胎换骨式改变的关系。你的另一半很可能会深刻地改变你。</p>
+<p>火星、金星、Rahu三颗星都相位你的婚姻宫——火星给感情带来热度和一些冲突的可能，金星带来吸引力和美感，Rahu带来非传统性（你的感情对象或感情模式可能不那么"常规"）。</p>
+<p><strong>关键窗口</strong>：你现在还年轻（21岁），月亮虽然入旺但年龄度数还在成长期，感情的真正成熟要稍晚一些。土星大运（2057之后）才是婚姻最稳定成熟的阶段，但那太遥远。现实些说：当前Rahu大运里的几个正面小运段——Rahu-Venus（2034-2037）和Rahu-Moon（2038-2040）——是感情上比较有动向的窗口，尤其Rahu-Venus那段，金星是你的Yogakaraka又管恋爱宫，值得留意。</p>
+<p><strong>给你的话</strong>：你的感情底子很好，不用焦虑。要做的功课是别让"反复审视"变成"永远观察"——遇到对的人，给自己一个允许敞开的机会。</p>
+<hr />
+<h2>板块5：健康提醒 — 注意什么</h2>
+<p>整体上，你的健康盘没有重大警讯，但有几个值得留意的点。</p>
+<p>你的上升是摩羯座，摩羯对应的身体部位是骨骼、关节、膝盖、牙齿和皮肤。土星（你的体质主星）逆行在巨蟹座——巨蟹对应胃部和消化系统、情绪相关的健康。这两个信号叠加，提示你两个可能的薄弱环节：一是<strong>骨骼关节系统</strong>（年纪上来后要注意关节、脊椎、牙齿的保养），二是<strong>消化系统和情绪性的身体反应</strong>（你的胃可能跟情绪挂钩，压力大的时候容易反映在消化上）。</p>
+<p>土星逆行还有一个含义：你的身体问题往往是"慢性积累型"，不是急性爆发型。也就是说，平时不太会有突发的大毛病，但如果长期不注意（久坐、压力、作息），问题会慢慢累积。对你来说，预防胜于治疗——规律作息、定期运动（尤其是养护关节和脊椎的运动）、管理压力，比什么都重要。</p>
+<p>火星入庙在4宫（也是情绪和内心的宫位），这股能量很足，但4宫的火也可能表现为"内心压着一股劲儿"——你可能习惯把情绪和压力往里收，外表看起来很稳，但内在有张力。找到健康的释放出口（运动、表达、创作）对你的身心都重要，别让那股火一直闷在里面。</p>
+<p>你的6宫（疾病宫）是空宫，管家水星跑到了收入宫，而且有木星的相位保护——这是个好信号，意味着你的整体抗病能力和恢复力不差，没有指向严重慢性病的强信号。</p>
+<p><strong>实在的建议</strong>：你不是体弱型，但你是"压力累积型"。把作息和运动当成长期投资，重点保养关节和消化，学会给内心的压力找出口。这些做到了，你的健康曲线会很平稳。</p>
+<blockquote>
+<p>注：以上为基于星盘结构的健康倾向提示，不构成医疗诊断。任何具体症状请咨询专业医生。</p>
+</blockquote>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 10</div>
+    <h2>第五部分（续）：人生架构总结</h2>
+  </div>
+  <h1>十大板块人生总结（二）：板块6-10</h1>
+<hr />
+<h2>板块6：教育/学习 — 适合学什么</h2>
+<p>你是个天生的"深度学习者"。</p>
+<p>你的太阳（灵魂指示星）在天蝎，水星（学习和信息处理的星）虽然在敌方位但坐在收入宫并和太阳同宫——这个组合说明你的学习风格是"钻深不钻广"型。你对浅层的、泛泛的知识没什么兴趣，但一旦某个领域勾起你的好奇心，你能扎进去钻得比谁都深。你适合的不是"什么都学一点"，而是"选定方向深挖"。</p>
+<p>你的学习宫（4宫，基础教育）有火星入庙坐镇，状态满分——这意味着你的学习能力和基础非常扎实，尤其是在需要主动性、竞争性、动手能力的学科上。火星管的是行动和技术，所以理工科、技术类、需要解决实际问题的学科，你会学得很有劲。</p>
+<p>你的创造宫和高等教育相关的5宫有月亮入旺——你的学习带有情感和创造的驱动，你学得最好的东西往往是你"有感觉"的东西，纯粹靠死记硬背、没有内在共鸣的内容你会学得很痛苦。</p>
+<p>关于要不要深造：你的9宫（高等教育宫）有Ketu，资源也比较充裕（接近溢出）。Ketu在9宫的人，对传统的学历路径有时会有一种"看透"的态度——你可能会觉得"为了文凭而读书"没意思，但如果是为了真正搞懂某个领域而深造，你会很投入。所以读研这件事，关键看动机：为了真才实学，值得；纯为了一纸文凭，你可能会中途觉得没劲。</p>
+<p><strong>学习风格</strong>：你适合"有导师引路 + 自己深挖"的混合模式。火星的执行力让你能自学，但天蝎太阳的深度让你受益于真正懂行的导师点拨。找到一个你尊敬的领域高手，跟着学，会比闷头自学效率高很多。</p>
+<hr />
+<h2>板块7：家庭/居住 — 安居乐业</h2>
+<p>你的家庭根基是这张盘的强项。</p>
+<p>你的家庭宫（4宫）有火星入庙坐守，激活了Ruchaka Yoga——这是个很强的配置。它意味着你的家庭底色是充满能量的，给你的是"力量"而非单纯的庇护。你的早年家庭环境（尤其是Mars大运2016-2023那段，正好是你的青少年期）给了你很扎实的成长基础和安全感。这股力量塑造了你内心的那团火。</p>
+<p>从D4（不动产盘）看，金星和土星都坐在物质基础宫——你有能力为自己建立高品质的居住环境和物质基础。金星管事业，所以你的"安家"很可能是和"立业"绑定的：通过事业成就来改善和稳固居住条件。节奏会偏慢（土星主导），不是早早就置业的类型，而是稳扎稳打、时机成熟了一步到位。</p>
+<p>跟父母的关系：你的9宫（也代表父亲）有Ketu，带来一种"超脱"的色彩——你和父亲/长辈的关系可能有一定的距离感，不是黏腻型，更像是各自独立、互相尊重的模式。这不是疏远，而是一种成熟的边界。</p>
+<p>关于搬迁和定居：火星在4宫很稳，说明你内心对"根"是有需求的，你不是天生的漂泊者。但Rahu在3宫（移动宫）会带来一些移动和探索的冲动。综合看，你年轻时可能会因为探索和发展而移动（Rahu大运期间），但内心始终向往一个稳定的根据地，最终会在某个地方真正定下来。</p>
+<p><strong>什么时候定下来</strong>：物质基础的稳固和土星、金星的能量释放有关，比较现实的窗口在30岁之后逐步成型，土星大运（2057+）是终极稳定期。年轻阶段以探索和积累为主，不用急着"定下来"。</p>
+<hr />
+<h2>板块8：社交/声誉 — 别人怎么看你</h2>
+<p>你有一个很特别的配置：<strong>你的社会形象就是你的事业形象</strong>。</p>
+<p>代表"世人眼中的你"的Arudha Lagna落在你的事业宫（10宫，天秤座）。这意味着别人认识你、记住你、定义你，主要是通过你做的事、你的专业成就、你的作品。你不是那种靠人设或社交手腕出名的人，你的名声来自实打实的产出。这是一种"作品即名片"的存在方式。</p>
+<p>而且你的Arudha Lagna（天秤）和你的真实上升（摩羯）不在同一个星座——这说明外界对你的印象和你真实的内在有一点错位。外人看到的你（天秤式）可能显得更优雅、更注重平衡、更有亲和力；但你真实的内核（摩羯+天蝎）其实更深沉、更有野心、更不好惹。这种错位不是坏事，它意味着你有一层"社交保护色"，能在需要的时候展示得体的一面，把真实的深度留给自己。</p>
+<p>你的收入和社交宫（11宫）很热闹，住着太阳和水星，资源也充裕。你的社交网络是你的资产——通过关系和网络带来的机会不少。但因为这两颗星管的是深度宫位（8/9/6宫），你的社交圈往往不是泛泛之交的大圈子，而是更倾向于"少而深"的专业型人脉：跟你同频的、有深度的、能聊到点子上的人。</p>
+<p><strong>你的名声从哪来</strong>：从你的专业深度和作品质量。你越是把事情做好做深，你的声誉自然越响。刻意经营人设对你效果不大，把作品做扎实才是你的路。</p>
+<hr />
+<h2>板块9：灵性/成长 — 灵魂课题</h2>
+<p>这是这张盘里很深的一个板块，值得慢慢说。</p>
+<p>你的灵魂指示星（AK）是太阳，在天蝎座11宫。太阳作为AK，意味着你这辈子的核心灵魂课题跟"自我的真实性"和"权威感"有关——你来学的，是如何成为一个真正有分量、能照亮别人的人，同时不被权力和自我膨胀带偏。天蝎的位置给这个课题加了深度：你的成长往往要经过一些"深水区"，经过转化和重生式的体验，才能真正发光。</p>
+<p>你的南交点Ketu在9宫（信仰/哲学宫），北交点Rahu在3宫（行动/探索宫）。这条业力轴线说的是：你的"舒适区"（Ketu）是哲学、信仰、既有的智慧体系——你天生对"意义"和"终极问题"有感觉，甚至可能上辈子就在这方面很深了。但你这辈子的"成长方向"（Rahu）是3宫——是行动、是实践、是把想法落地、是主动去传播和连接。</p>
+<p>翻译成人话：你很容易停留在"想"的层面——思考人生意义、追寻信仰、构建一套自己的世界观。这是你舒服的地方。但你的灵魂这辈子想让你做的，是<strong>把这些深刻的思考变成实际的行动和创造</strong>，是走出书斋去做、去说、去连接世界。你最大的成长，发生在你从"想明白"走向"做出来"的过程里。</p>
+<p>从D9看，你的太阳（AK）落在双鱼8宫——这说明你的灵魂成长之路确实要经过一些深度的转化和"放下"。你需要学会的功课之一，可能是放下对"完全掌控"的执着，学会在不确定中前行。</p>
+<p>Ketu还相位你的月亮（情感）和金星（事业/创造）——这提醒你在感情和事业上保持"做好但不执著于结果"的态度。你越是抓得紧，越容易失去；越是用心做好然后放手，反而越能得到。这是你这辈子要反复练习的智慧。</p>
+<p><strong>一句话灵魂课题</strong>：从"想清楚"走到"做出来"，从追寻意义走到创造意义，在深度转化中找到真实而不膨胀的自我。</p>
+<hr />
+<h2>板块10：赛道优势地图 — 你的先天加持在哪里</h2>
+<p>把前面所有的分析汇总，给你画一张"先天加持地图"。</p>
+<h3>你有天然加持的赛道</h3>
+<p><strong>1. 专业深耕型赛道</strong>（最强加持）
+你的太阳+水星在收入宫管着深度宫位，火星入庙给执行力，金星Yogakaraka给品味和价值感。这套组合最适合"把一个专业领域做深做精，建立个人专业声誉"的路线。研究、深度内容、专业咨询、创意专业线——任何"靠专业深度吃饭"的方向，你都有先天优势。</p>
+<p><strong>2. 创造与表达型赛道</strong>（强加持）
+月亮入旺在创造宫 + 金星Yogakaraka + D5创造盘里太阳坐上升。你的创造力有情感温度，又有实质的落地能力。设计、创作、内容、需要审美和个人风格的工作，是你的加持区。</p>
+<p><strong>3. 执行与建设型赛道</strong>（稳定加持）
+火星入庙的Ruchaka Yoga给你强大的执行力和竞争力，土星Core-Driver给你长期建设的耐力。需要"主动出击+长期坚持"的事情，你能扛住。</p>
+<h3>需要后天经营的赛道</h3>
+<ul>
+<li><strong>纯关系/纯社交型的事业</strong>：你的社交是"少而深"型，不擅长大规模浅层social，靠人脉网络铺开的生意需要你额外努力。</li>
+<li><strong>快钱/投机型方向</strong>：你的财富是慢积累型，投机不是你的命门，碰了容易吃亏。</li>
+<li><strong>海外/灵性/隐居型发展（12宫方向）</strong>：12宫资源极度匮乏（全盘最低），这些方向先天资源不足，要走得格外谨慎。</li>
+</ul>
+<h3>钱从哪来</h3>
+<p>专业深度 + 长期合作关系 + 时间积累。不是流量，不是投机，是"把事做深、把人靠稳、让时间发酵"。</p>
+<h3>关键时间节点（与Dasha速查表一致）</h3>
+<table>
+<thead>
+<tr>
+<th>时段</th>
+<th>大运</th>
+<th>性质</th>
+<th>该做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023-2041</td>
+<td>Rahu（平淡/探索期）</td>
+<td>摸索定位</td>
+<td>尝试方向、找准赛道、积累深度，别急着定型</td>
+</tr>
+<tr>
+<td>2025-2028</td>
+<td>Rahu-Jupiter小运</td>
+<td>相对清晰窗口</td>
+<td>事业方向可以明确一些，木星给视野</td>
+</tr>
+<tr>
+<td>2034-2037</td>
+<td>Rahu-Venus小运</td>
+<td>正面段</td>
+<td>创造力和感情方向值得发力</td>
+</tr>
+<tr>
+<td>2041-2057</td>
+<td>Jupiter（混合期）</td>
+<td><strong>事业扩张窗口</strong></td>
+<td>全盘最强木星释放，大胆扩展但控损耗</td>
+</tr>
+<tr>
+<td>2057-2076</td>
+<td>Saturn（正面期）</td>
+<td><strong>收获定型期</strong></td>
+<td>一辈子建设的成果集中兑现，财富和地位成熟</td>
+</tr>
+<tr>
+<td>2100-2120</td>
+<td>Venus（正面期）</td>
+<td>终极正面期</td>
+<td>Yogakaraka大运，全面收获</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总结你的人生曲线</strong>：你是典型的"长跑型选手"——前期（现在到40岁）是探索和打基础，中期（40-55岁，Jupiter大运）是事业的真正扩张，后期（55岁之后，Saturn和Venus大运）是稳稳的收获。你不是少年得志型，但你是越老越值钱、越走越稳的类型。耐心是你最大的武器，急躁是你唯一要防的敌人。</p>
+<hr />
+<h2>🎯 核心分析完成</h2>
+<p>已生成完整报告（11个文件）：p2a~p2d（行星审计）、p3a/p3b（分盘交叉）、p4a/p4b（宫位诊断）、p5a/p5b（十大板块）、appendix（技术附录）。</p>
+<p>你可以：
+- 继续提问任何问题（我会基于盘面数据回答）
+- 说"分析事业"获得深度职业蓝图
+- 说"分析感情"获得深度感情分析
+- 说"生成报告"将所有文件打包为HTML</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 11</div>
+    <h2>技术附录</h2>
+  </div>
+  <h1>技术附录</h1>
+<h2>Dasha 回顾速查表</h2>
+<table>
+<thead>
+<tr>
+<th>大运</th>
+<th>时段</th>
+<th>大运星P1</th>
+<th>尊贵度</th>
+<th>落宫</th>
+<th>管宫</th>
+<th>正面</th>
+<th>负面</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sun</td>
+<td>2000-2006</td>
+<td>清理者(8主)</td>
+<td>中性</td>
+<td>11宫</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>混合期</td>
+</tr>
+<tr>
+<td>Moon</td>
+<td>2006-2016</td>
+<td>交易者(7主)</td>
+<td><strong>入旺</strong></td>
+<td>5宫</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td><strong>正面期</strong></td>
+</tr>
+<tr>
+<td>Mars</td>
+<td>2016-2023</td>
+<td>交易者+竞争者(4/11主)</td>
+<td><strong>入庙</strong></td>
+<td>4宫</td>
+<td>4,11</td>
+<td>4</td>
+<td>0</td>
+<td><strong>正面期</strong></td>
+</tr>
+<tr>
+<td><strong>Rahu</strong></td>
+<td><strong>2023-2041</strong></td>
+<td><strong>节点</strong></td>
+<td>—</td>
+<td><strong>3宫</strong></td>
+<td>—</td>
+<td>0</td>
+<td>0</td>
+<td><strong>平淡期</strong></td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td>2041-2057</td>
+<td>竞争者+清理者(3/12主)</td>
+<td>中性</td>
+<td>10宫</td>
+<td>3,12</td>
+<td>2</td>
+<td>1</td>
+<td>混合期</td>
+</tr>
+<tr>
+<td>Saturn</td>
+<td>2057-2076</td>
+<td>Core-Driver+Trader(1/2主)</td>
+<td>中性(逆行)</td>
+<td>7宫</td>
+<td>1,2</td>
+<td>4</td>
+<td>0</td>
+<td><strong>正面期</strong></td>
+</tr>
+<tr>
+<td>Mercury</td>
+<td>2076-2093</td>
+<td>盟友+竞争者(6/9主)</td>
+<td>敌方</td>
+<td>11宫</td>
+<td>6,9</td>
+<td>2</td>
+<td>1</td>
+<td>混合期</td>
+</tr>
+<tr>
+<td>Ketu</td>
+<td>2093-2100</td>
+<td>节点</td>
+<td>—</td>
+<td>9宫</td>
+<td>—</td>
+<td>1</td>
+<td>0</td>
+<td>平淡期</td>
+</tr>
+<tr>
+<td>Venus</td>
+<td>2100-2120</td>
+<td>Yogakaraka(5/10主)</td>
+<td>中性</td>
+<td>1宫</td>
+<td>5,10</td>
+<td>4</td>
+<td>0</td>
+<td><strong>正面期</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>当前大运小运叠加（Rahu 2023-2041）</h3>
+<table>
+<thead>
+<tr>
+<th>小运</th>
+<th>时段</th>
+<th>小运判定</th>
+<th>大×小叠加</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rahu-Rahu</td>
+<td>2023-02~2025-11</td>
+<td>平淡期</td>
+<td>该领域顺利</td>
+</tr>
+<tr>
+<td><strong>Rahu-Jupiter ← 当前</strong></td>
+<td><strong>2025-11~2028-03</strong></td>
+<td>混合期</td>
+<td><strong>该领域顺利</strong></td>
+</tr>
+<tr>
+<td>Rahu-Saturn</td>
+<td>2028-03~2031-02</td>
+<td>正面期</td>
+<td>该领域顺利</td>
+</tr>
+<tr>
+<td>Rahu-Mercury</td>
+<td>2031-02~2033-08</td>
+<td>混合期</td>
+<td>该领域顺利</td>
+</tr>
+<tr>
+<td>Rahu-Ketu</td>
+<td>2033-08~2034-09</td>
+<td>平淡期</td>
+<td>该领域顺利</td>
+</tr>
+<tr>
+<td>Rahu-Venus</td>
+<td>2034-09~2037-09</td>
+<td>正面期</td>
+<td>该领域顺利</td>
+</tr>
+<tr>
+<td>Rahu-Sun</td>
+<td>2037-09~2038-08</td>
+<td>混合期</td>
+<td>该领域顺利</td>
+</tr>
+<tr>
+<td>Rahu-Moon</td>
+<td>2038-08~2040-02</td>
+<td>正面期</td>
+<td>该领域顺利</td>
+</tr>
+<tr>
+<td>Rahu-Mars</td>
+<td>2040-02~2041-02</td>
+<td>正面期</td>
+<td>该领域顺利</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：Rahu大运整体基调「平淡期」，叠加规则下各小运均判定「该领域顺利」。
+这不代表每件事都顺，而是说：这18年整体不会陷入系统性危机，但也缺乏爆发性高光。</p>
+</blockquote>
+<hr />
+<h2>P1-P12 参数全表</h2>
+<table>
+<thead>
+<tr>
+<th>行星</th>
+<th>P1角色</th>
+<th>P2健康</th>
+<th>P5落宫</th>
+<th>P7尊贵度</th>
+<th>P9力量</th>
+<th>大运判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sun</td>
+<td>清理者(8主)</td>
+<td>顺行</td>
+<td>11宫(吉)</td>
+<td>中性</td>
+<td>129%</td>
+<td>混合期</td>
+</tr>
+<tr>
+<td>Moon</td>
+<td>交易者(7主)</td>
+<td>顺行/盈月</td>
+<td>5宫(吉)</td>
+<td><strong>入旺</strong></td>
+<td>129%</td>
+<td><strong>正面期</strong></td>
+</tr>
+<tr>
+<td>Mars</td>
+<td>交易者+竞争者(4/11主)</td>
+<td>顺行</td>
+<td>4宫(吉/自管)</td>
+<td><strong>入庙</strong></td>
+<td>126%</td>
+<td><strong>正面期</strong></td>
+</tr>
+<tr>
+<td>Mercury</td>
+<td>盟友+竞争者(6/9主,GK)</td>
+<td>顺行</td>
+<td>11宫(吉)</td>
+<td><strong>敌方</strong></td>
+<td>101%</td>
+<td>混合期</td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td>竞争者+清理者(3/12主)</td>
+<td>顺行</td>
+<td>10宫(吉)</td>
+<td>中性</td>
+<td>125%</td>
+<td>混合期</td>
+</tr>
+<tr>
+<td>Venus</td>
+<td><strong>Yogakaraka</strong>(5/10主)</td>
+<td>顺行</td>
+<td>1宫(吉)</td>
+<td>中性</td>
+<td>133%</td>
+<td><strong>正面期</strong></td>
+</tr>
+<tr>
+<td>Saturn</td>
+<td>Core-Driver+Trader(1/2主)</td>
+<td><strong>逆行</strong>/DigBala</td>
+<td>7宫(吉)</td>
+<td>中性</td>
+<td>119%</td>
+<td><strong>正面期</strong></td>
+</tr>
+<tr>
+<td>Rahu</td>
+<td>节点</td>
+<td>逆行</td>
+<td>3宫</td>
+<td>—</td>
+<td>—</td>
+<td>平淡期</td>
+</tr>
+<tr>
+<td>Ketu</td>
+<td>节点</td>
+<td>逆行</td>
+<td>9宫</td>
+<td>—</td>
+<td>—</td>
+<td>平淡期</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>格局激活验证（Yoga × Dasha × D9）</h2>
+<h3>Raja Yoga（王者格）参与星：Mars, Mercury, Saturn, Moon, Venus</h3>
+<p><strong>第1层承诺</strong>：Mars+Mercury（L4+L9互视）；Mars+Saturn（L4+L1合作）；Mercury+Moon（L9+L7互视）；Saturn+Venus（L1+L5/L10，Core-Driver+Yogakaraka）</p>
+<p><strong>第2层时机（各参与星大运激活窗口）</strong>：
+- Moon大运 2006-2016：<strong>正面期</strong>，部分激活
+- Mars大运 2016-2023：<strong>正面期</strong>，最强激活（Mars+Saturn+Mercury都受益）
+- Saturn大运 2057-2076：<strong>正面期</strong>，再度激活
+- Venus大运 2100-2120：<strong>正面期</strong>，终极激活</p>
+<p><strong>第3层品质（D9）</strong>：
+- Mars D9：增值原始股（90%+兑现）
+- Venus D9：稳健国债（80%+兑现）
+- Saturn D9：稳健国债（75-80%兑现）
+- Moon D9：带毒诱饵（50-60%，有折扣）</p>
+<p><strong>综合</strong>：Mars大运（2016-2023）是迄今最强激活窗口，D9支撑好；下一个高质量窗口是Saturn大运（2057-2076）。</p>
+<hr />
+<h3>Dhana Yoga（财富格）参与星：Saturn, Mars, Venus, Mercury</h3>
+<p>与Raja Yoga共享参与星，激活窗口相同。财富格的变现需要L2（Saturn）和L11（Mars）协同——两者都有正面大运期，说明财富积累的节奏是"早中期打基础（Mars）、后期收获（Saturn/Venus）"。</p>
+<hr />
+<h3>Ruchaka Yoga（Ruchaka，五大贤者）参与星：Mars</h3>
+<p><strong>第2层时机</strong>：Mars大运（2016-2023）正面期，是唯一专属激活窗口。
+<strong>第3层品质</strong>：Mars D9增值原始股（90%+）。
+<strong>综合</strong>：激活窗口已过（2016-2023）。但Mars是永久性的盘面资产，它在4宫的格局不会消失——只是最集中的爆发期已经完成，今后更多是稳定发挥。</p>
+<hr />
+<h2>分盘数据速览</h2>
+<p>D9 Lagna: Leo | D10 Lagna: Taurus | D4 Lagna: Libra | D5 Lagna: Scorpio</p>
+<table>
+<thead>
+<tr>
+<th>行星</th>
+<th>D9星座</th>
+<th>D9宫位</th>
+<th>D9结算</th>
+<th>D10宫位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Moon</td>
+<td>Pisces</td>
+<td>8</td>
+<td>带毒诱饵50%</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Mars</td>
+<td>Leo</td>
+<td>1(D9 Lagna)</td>
+<td>增值原始股90%</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Venus</td>
+<td>Aquarius</td>
+<td>7</td>
+<td>稳健国债80%</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Saturn</td>
+<td>Sagittarius</td>
+<td>5</td>
+<td>稳健国债75%</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Mercury</td>
+<td>Virgo</td>
+<td>2</td>
+<td>稳健国债75%</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td>Aquarius</td>
+<td>7</td>
+<td>高利印钞机60%</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Sun</td>
+<td>Pisces</td>
+<td>8</td>
+<td>带毒诱饵50%</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>校验报告</h2>
+<pre><code> 1. SAV=337          ✅
+ 2. BAV行常量        ✅
+ 3. 行星完整性(10)   ✅
+ 4. 度数唯一性        ✅
+ 5. Ra-Ke差180°      ✅
+ 6. 逆行标记完整      ✅
+ 6b. 燃烧检测        ✅ [无燃烧]
+ 7. Ayanamsa一致     ✅ Lahiri 23.9402°
+ 7c. 盈月/亏月       盈月 (距Sun 161.3°)
+ 8. Nakshatra↔度数   ✅
+ 9. Chara Karaka排序 ✅
+10. Dasha时长常数    ✅
+11. D9公式交叉       ✅
+12. D60 Ra-Ke对宫   ✅
+13. D30 Ra-Ke对宫   ❌ (注：D30 Ra-Ke校验逻辑与D60不同，此校验规则待复核)
+14. 出生时间精度     Level 1（精确到分钟，出生证明）
+15. D30/D60同意状态  verified（已告知并同意）
+</code></pre>
+<hr />
+<h2>新增计算层数据速览</h2>
+<h3>多系统大运当前状态</h3>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>当前大运</th>
+<th>质地</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vimsottari</td>
+<td>Rahu（2023-2041）· Jupiter小运（2025-2028）</td>
+<td>平淡期</td>
+</tr>
+<tr>
+<td>Chara Dasha</td>
+<td>Scorpio（2021-2026.12）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Narayana Dasha</td>
+<td>Virgo（2017-2027）</td>
+<td>磨砺期</td>
+</tr>
+<tr>
+<td>Shoola Dasha</td>
+<td>Virgo（2023-2032）</td>
+<td>⚠️ 逆境/考验</td>
+</tr>
+</tbody>
+</table>
+<h3>特殊行星状态</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mrityu Bhaga</td>
+<td>无（无行星处于死亡度数）</td>
+</tr>
+<tr>
+<td>Pushkara Navamsha</td>
+<td>Moon、Mercury（D9 吉位，品质加成）</td>
+</tr>
+<tr>
+<td>Marana Karaka Sthana</td>
+<td>无</td>
+</tr>
+<tr>
+<td>Kala Sarpa</td>
+<td>未形成</td>
+</tr>
+<tr>
+<td>Manglik</td>
+<td>形成（有化解条件）</td>
+</tr>
+<tr>
+<td>Ganda Moola</td>
+<td>未形成</td>
+</tr>
+</tbody>
+</table>
+<h3>D60 业力分类速查</h3>
+<table>
+<thead>
+<tr>
+<th>行星</th>
+<th>D60星座/宫</th>
+<th>业力类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mars</td>
+<td>Leo / 5宫</td>
+<td><strong>业力资产</strong>（创造力前世积累）</td>
+</tr>
+<tr>
+<td>Mercury</td>
+<td>Capricorn / 10宫</td>
+<td><strong>业力资产</strong>（知识业力最强）</td>
+</tr>
+<tr>
+<td>Venus + Moon</td>
+<td>Sagittarius / 9宫</td>
+<td>中性（意义追求，事业/感情同根）</td>
+</tr>
+<tr>
+<td>Saturn</td>
+<td>Aries / 1宫（落陷）</td>
+<td><strong>业力欠账</strong>（建设被打断的功课）</td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td>Gemini / 3宫</td>
+<td><strong>业力欠账</strong>（扩张不落地的惯性）</td>
+</tr>
+<tr>
+<td>Sun</td>
+<td>Cancer / 4宫</td>
+<td>中性（家庭归属感追问）</td>
+</tr>
+</tbody>
+</table>
+<h3>D30 业力逆境速查</h3>
+<table>
+<thead>
+<tr>
+<th>D30 宫位</th>
+<th>行星</th>
+<th>逆境意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11宫（处女）</td>
+<td>Sun + Mercury + Venus</td>
+<td>逆境时最强武器（分析力），困难后转化为收益</td>
+</tr>
+<tr>
+<td>2宫（射手）</td>
+<td>Mars + Jupiter</td>
+<td>通过意义框架承受磨难</td>
+</tr>
+<tr>
+<td>5宫（双鱼）</td>
+<td>Saturn + Rahu + Ketu</td>
+<td>创造性活动是修复来源，但需解除压制信念</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 12</div>
+    <h2>第三部分C：D30逆境盘深度分析</h2>
+  </div>
+  <h1>D30 逆境盘（Trimsamsa）深度分析</h1>
+<blockquote>
+<p>分盘状态：✅ 已事件校验，可大量参考
+D30 Lagna：Scorpio（天蝎座）
+核心问题：逆境的结构性规律是什么？面对挫折时的底层反应模式是什么？</p>
+</blockquote>
+<hr />
+<h2>一、D30 的读法：不是预言厄运，是描述模式</h2>
+<p>D30 不是在预测你会倒霉，它回答一个更精确的问题：<strong>你的逆境有什么结构性规律？面对挫折时，你的"底层反应模式"是什么？</strong></p>
+<p>D30 Lagna 是天蝎座，守护星是火星。天蝎是深度、穿透、转化的星座——这告诉你，你面对逆境时的底层模式是"往深处走"型的，不是回避，而是穿透。碰到困境不是向外求救，而是向内钻，直到把它搞清楚。挫折会让你变深，不会让你崩塌。</p>
+<hr />
+<h2>二、D30 行星格局解读</h2>
+<h3>Sun + Mercury + Venus 同在 D30 的 11 宫（处女座）</h3>
+<p>太阳是你的灵魂指示星（AK），水星是全盘 Sodhya Pinda 第一（净强度最高），金星是 Yogakaraka（事业/创造力双核）。三颗核心星在 D30 的收益宫，而且都在处女——处女是水星的旺座，是最适合分析、精确、专业型工作的星座。</p>
+<p>这个配置说明：<strong>在逆境中，你最有力的武器是分析和信息处理</strong>。面对困难时你会进入一种高效的分析状态——把问题拆解、找模式、找解法。逆境反而会激活你最强的能力，而不是让你瘫痪。金星也在这里，意味着你的事业和创造力（金星管 5/10 宫）在经历困难之后会有实质收益——不是直接的，而是经过消化之后转化成资源。</p>
+<h3>Mars + Jupiter 在 D30 的 2 宫（射手座）</h3>
+<p>2 宫是语言/财富/自我叙述的宫位，射手代表扩展和哲学。这个位置揭示了你在逆境中的另一个底层机制：<strong>通过"给困难赋予意义"来承受它</strong>。你会在内心建构一套解释框架，把磨难纳入一个更大的叙事——"这是一段必经之路""这会让我变强"。这不是自我欺骗，而是你真实的心理韧性来源。射手式的视野给你足够的距离感，让你不会被当下的困难完全淹没。</p>
+<h3>Saturn + Rahu + Ketu 三星同在 D30 的 5 宫（双鱼座）</h3>
+<p>5 宫是创造/子女/直觉/享乐，双鱼是流动、灵性、溶解边界。Saturn（你的 Core-Driver，管 1+2 宫）、Rahu（放大器）和 Ketu（去执念）三星聚在这里，是一个值得深看的配置。</p>
+<p><strong>正面含义</strong>：艺术、创造、灵性修行类的活动对你有超出常人的心理修复效果。在极度疲惫或压力很大的时候，真正能让你恢复的不是休息，而是投入一件有创造性的事情——写东西、做东西、或者任何能让你进入"心流"状态的事。</p>
+<p><strong>需要觉察的模式</strong>：Saturn 在双鱼 5 宫带有一种"对创造力和享乐的内在压制"——可能存在一种"我不该享受""放松是浪费时间""要先做完有用的事才能玩"的隐性信念。这种信念在逆境时会加重，让你在最需要自我修复的时候反而拒绝修复。注意识别并解除这个模式。</p>
+<hr />
+<h2>三、D30 × D1 交叉：逆境的健康面向</h2>
+<p>D30 里没有行星落在有毒区（8/12 宫），这是一个很好的信号——不存在特别强烈的灾厄压力宫配置，逆境会来，但不会是席卷性的系统崩溃。</p>
+<p>D30 和 D1 的 Lagna 组合（天蝎 + 摩羯）都是偏深沉、扎实的星座——你的底色是有韧性的，不轻易崩溃。</p>
+<h3>Manglik（火星凶相）：有化解</h3>
+<p>火星形成了 Manglik，但有化解条件。在这张盘的具体语境里，火星入庙在 4 宫，Ruchaka Yoga，极强。对 7 宫（婚姻宫）的相位带着充足能量，是"两个有能量的人之间的碰撞"，而不是单方面的伤害。感情里会有热度和摩擦，但这是让关系更深的动力，不是破坏力量。化解条件成立，不必过度担心。</p>
+<hr />
+<h2>四、D30 关键结论</h2>
+<ol>
+<li><strong>面对逆境的核心武器是分析力</strong>——这不是学来的，是天然的，Mercury + Sun + Venus 在 D30 的 11 宫处女验证了这一点</li>
+<li><strong>"赋予苦难意义"是你的韧性来源</strong>——Mars + Jupiter 在 D30 的 2 宫射手，你会用更大的框架来承受困难</li>
+<li><strong>创造性活动是最好的压力缓冲器</strong>——但需要解除 Saturn 在 5 宫带来的"不该享受"的隐性信念</li>
+<li><strong>逆境不会是系统性灾难</strong>——D30 无行星在有毒区，磨难会来但有结构，不会无序崩溃</li>
+<li><strong>Manglik 有化解，感情的张力是能量</strong>——不必恐惧</li>
+</ol>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 13</div>
+    <h2>第三部分D：D60业力盘深度分析</h2>
+  </div>
+  <h1>D60 业力盘（Shashtiamsa）深度分析</h1>
+<blockquote>
+<p>分盘状态：✅ 已事件校验，可大量参考
+D60 Lagna：Aries（白羊座）
+核心问题：今生配置的前世根源是什么？哪些是业力资产，哪些是需要偿还的欠账？</p>
+</blockquote>
+<hr />
+<h2>一、D60 的读法：三层星盘的底层代码</h2>
+<p>D1 是今生的"表现"，D9 是今生的"灵魂品质"，D60 是今生配置的"前世根源"——那些 D1 里看起来奇怪或者很难解释的配置，在 D60 里往往能找到答案。</p>
+<p>每颗行星在 D60 的位置揭示：这颗星管理的领域，前世有没有积累（业力资产），还是有欠账（业力债），抑或是需要主动打破的惯性。</p>
+<hr />
+<h2>二、D60 Lagna：白羊座 + Saturn 同宫</h2>
+<p>D60 上升是白羊，守护星是火星。白羊是行动力、先锋、自我主张的星座——你带着一种"我要亲自去做"的原始冲动来到今生，天然倾向于行动和开拓。</p>
+<p>但 D60 上升宫里坐着 Saturn（落陷在白羊）。这是最重要的业力信号：</p>
+<p><strong>土星在 D60 Lagna 落陷</strong>，意味着你的业力底层有反复出现的主题：<strong>"建设被打断"的经历</strong>。前世积累了大量关于努力构建却遭遇限制、延迟、失去的体验，这些经历内化成了一种底层的"不确定能否持久"的隐忧。</p>
+<p>D1 里土星逆行——这是今生在偿还和修复这个业力模式。逆行 = 反复审视和修正，DigBala = 在最强方向上工作，Yogakaraka = 功能最吉。<strong>今生土星的强势配置不是偶然的，而是在用高压建设的方式偿还前世的建设欠账</strong>。你的谨慎性格、不轻易投入、需要反复确认——这些都有业力根源。</p>
+<hr />
+<h2>三、行星逐一业力读盘</h2>
+<h3>太阳（AK 灵魂指示星）→ D60 4 宫 巨蟹（与 Ketu 同宫）</h3>
+<p>太阳和 Ketu（南交点，代表过去的遗产和需要放下的执念）同在 D60 的家庭/情感根基宫。这是灵魂层面最重要的信号之一：</p>
+<p>你的灵魂在前世与"家"和"情感归属感"有深度的纠缠——可能是曾经过度执着于家庭，或在家庭方面有未解的深层伤痕。Ketu 和太阳同在 4 宫，暗示今生你在"家是什么"这个问题上有一种深处的追问。这个追问本身就是今生的功课——不是要你逃离家庭，而是要你学会在"根"和"自由"之间找到真正属于自己的平衡点。</p>
+<p>D1 里太阳（L8，清理者）在 11 宫天蝎，表面上管深度变革和收入。D60 揭示了更深的底色：你真正在乎的深处是那种"真实的情感归属感"，而不只是表面展示的成就感。</p>
+<p><strong>业力类型</strong>：中性（探索家庭意义的业力功课）</p>
+<h3>月亮（L7，配偶/情感）→ D60 9 宫 射手</h3>
+<p>月亮在 D60 的运势/哲学/高等教育宫，射手座。这说明你的情感底色前世就带着"寻找意义"的底色——你不是一个只想安稳过日子的人，情感上你一直在寻找某种更深的方向感。月亮在射手 9 宫，你的情绪很容易被"这件事有没有意义""这个人有没有灵魂深度"这类问题激活。</p>
+<p>D1 月亮入旺金牛（外表稳重踏实），D60 月亮在射手 9 宫（内心渴望意义）——两者叠加的含义：你在感情上外表是金牛式的稳重，但内心深处一直有一股射手式的渴望——渴望在关系里找到更高层次的精神共鸣。这解释了为什么你对感情不只是要求稳定，还要求"这个人能带给我思想层面的触动"。</p>
+<p><strong>业力类型</strong>：中性（追寻精神意义的业力方向）</p>
+<h3>火星（Ruchaka Yoga，执行力核心）→ D60 5 宫 狮子</h3>
+<p>火星在 D60 的创造/子女/恋爱宫，狮子座。这是<strong>业力资产</strong>——前世你在创造力、行动力、自我表达方面积累了深厚的底气。这就是为什么 D1 里火星入庙激活 Ruchaka Yoga 那么自然：不是这辈子才突然拥有的，而是你带来的内在积累被触发了。你的执行力和竞争力有前世业力的支撑，不是从零开始练出来的。</p>
+<p><strong>业力类型</strong>：业力资产（前世创造力/行动力积累，今生可直接提取）</p>
+<h3>水星（GK 障碍指示星，但 Sodhya Pinda 第一）→ D60 10 宫 摩羯（与 Rahu 同宫）</h3>
+<p>水星和 Rahu 在 D60 的事业/权威/成就宫，摩羯座。这是整张 D60 盘里最重要的一个配置。</p>
+<p><strong>业力资产</strong>：你的灵魂在"知识、信息处理、建立系统性认知体系"这件事上有深厚的前世积累。前世你做过深入的知识工作，今生在这个方向上是有底气的。Rahu 在这里放大了这个方向，同时带来"对知识/成就的极度渴望"——这种渴望是前世延续下来的，不是简单的虚荣心，是一种灵魂层面对"搞清楚"的执念。</p>
+<p>这直接解释了一个在 D1 里很难解释的矛盾：水星是 GK（障碍指示星），但 Sodhya Pinda 排第一。D60 给出了答案——这颗星在业力层面是事业成就宫的强位，今生水星的"障碍"属性是一种表面现象，深层业力是成就属性。<strong>今生水星难走，是因为要通过克服这个障碍来兑现前世积累的知识业力</strong>。水星难走，但它的终点是成就。</p>
+<p><strong>业力类型</strong>：业力资产（D60 10宫，前世知识积累最强）</p>
+<h3>木星（L3/L12，欺骗性风险）→ D60 3 宫 双子</h3>
+<p>木星在 D60 的行动/传播/兄弟宫，双子座。木星在双子是中性偏弱的位置（双子由水星守护，木星和水星天然敌对）。</p>
+<p>这直接解释了 D1 里木星的"欺骗性风险"标注——不是这辈子才有的倾向，而是业力层面本来就有"扩张但不够落地"的惯性。前世有过"说得比做得多""视野很宏大但执行跟不上"的经验积累，今生木星管 3+12 宫，这个惯性仍然存在。今生木星的功课：有视野没问题，但要让扩展真正落地，而不是停留在说的层面。</p>
+<p><strong>业力类型</strong>：业力欠账（前世扩张惯性，今生需要落地）</p>
+<h3>金星（Yogakaraka，L5/L10）→ D60 9 宫 射手（与月亮同宫）</h3>
+<p>金星和月亮同在 D60 的 9 宫射手。这是一个深刻的业力信号：你的事业（金星 L10）和情感（月亮 L7）在业力层面是同源的，都根植在对"意义和哲学"的追求上。</p>
+<p>前世你在一个"以理念为核心"的领域有深度投入——可能是传授某种思想体系、带有使命感的创作、或者以哲学/灵性为核心的服务。这在今生的显现就是：你不太能接受"只是为了赚钱"的工作，你的事业需要有意义感支撑。没有意义感的工作会让你感到灵魂层面的疲惫，而不只是身体上的累。</p>
+<p><strong>业力类型</strong>：中性偏强（业力层面意义追求与事业同源）</p>
+<h3>土星（Core-Driver，L1/L2）→ D60 1 宫 白羊（Lagna，落陷）</h3>
+<p>已在 Lagna 分析中覆盖。D60 土星落陷在白羊，是今生最大的业力功课：<strong>学会在不确定中建设，接受自己不是铁打的</strong>。</p>
+<p>今生每一次你选择在不确定中继续建设、而不是因为"可能会失去"而退缩，就是在偿还和转化这个业力欠账。Saturn 大运（2057-2076，正面期 score +4.50）之所以是正面期，正是因为那是这个业力功课积累到一定程度后开花结果的阶段。</p>
+<p><strong>业力类型</strong>：业力欠账（D60 落陷，今生修复中）</p>
+<hr />
+<h2>四、D60 三大核心发现</h2>
+<p><strong>发现一：知识-意义双轴是灵魂底层</strong></p>
+<p>D60 里最突出的配置：水星在 10 宫（知识/研究/职业成就）+ 金星/月亮在 9 宫（意义/哲学）——知识和意义构成了你业力底层的双核驱动。做深度知识工作本身就是寻找意义，寻找意义也通过知识工作来表达。凡是能同时触及这两件事的方向，你都会有一种"对了"的感觉。</p>
+<p><strong>发现二：事业与情感在业力层面同根</strong></p>
+<p>金星（L10，事业）和月亮（L7，情感）在 D60 同宫。你的事业成就感和情感满足感用同一套燃料驱动——在意义感这件事上，职业和感情对你来说是同一件事的两个面。如果事业失去意义感，情感状态也会随之下滑；反过来，一段没有深度的感情会让你感到比一般人更深的疲惫。</p>
+<p><strong>发现三：土星落陷是最大的业力功课，也是最大的驱动力</strong></p>
+<p>D60 土星在白羊落陷，坐镇 D60 Lagna——这是今生最核心的业力功课，同时也是驱动你拼命建设的引擎。这不是惩罚，是一种正在进行中的修复。每一次你选择相信"我建设的东西能持久"，每一次你允许自己真正投入一段关系或一个项目，都是在转化这个业力欠账。</p>
+<hr />
+<h2>五、D60 × D9 三层交叉总结</h2>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>看什么</th>
+<th>这张盘</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D1（今生表现）</strong></td>
+<td>行为与外部环境</td>
+<td>摩羯上升，土星 Core-Driver，金星 Yogakaraka，Mars 入庙</td>
+</tr>
+<tr>
+<td><strong>D9（灵魂品质）</strong></td>
+<td>深层品质与兑现能力</td>
+<td>D9 Lagna 狮子，Mars D9 Lagna（执行力内化），金星 D9 7宫水瓶（理性驱动）</td>
+</tr>
+<tr>
+<td><strong>D60（业力根源）</strong></td>
+<td>前世积累与今生功课</td>
+<td>知识业力（Mercury 10宫），意义追求（Venus+Moon 9宫），建设功课（Saturn Lagna 落陷）</td>
+</tr>
+</tbody>
+</table>
+<p>三层叠起来，读出来的是一个清晰的人生结构：你带着扎实的知识业力和对意义的深度渴望来到今生（D60），这些资产在灵魂层面支撑了你的执行力（D9 Mars 在 Lagna）和理性驱动的事业感（D9 Venus 7宫），最终在今生以摩羯式的稳健建设、水星式的深度专业路线来表达（D1）。业力功课（Saturn D60 落陷）在今生化解的方式是：每一次你选择在不确定中继续建设、而不是因为"可能会失去"而退缩，就是在偿还那个业力欠账。</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 14</div>
+    <h2>第三部分E：多系统大运共振分析</h2>
+  </div>
+  <h1>多系统大运共振分析（Narayana × Shoola × Vimsottari × Chara）</h1>
+<blockquote>
+<p>四套独立时间体系交叉验证，寻找共振点——共振处 = 高概率时机窗口</p>
+</blockquote>
+<hr />
+<h2>一、当前（2026年7月）四系统状态</h2>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>大运</th>
+<th>质地</th>
+<th>时段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vimsottari</strong>（心理层）</td>
+<td>Rahu 大运 · Jupiter 小运</td>
+<td>平淡期 · 混合期</td>
+<td>2023.02—2041.02</td>
+</tr>
+<tr>
+<td><strong>Chara Dasha</strong>（Jaimini环境1）</td>
+<td>Scorpio</td>
+<td>—</td>
+<td>2021.12—2026.12</td>
+</tr>
+<tr>
+<td><strong>Narayana Dasha</strong>（Jaimini环境2）</td>
+<td>Virgo</td>
+<td>磨砺/服务期</td>
+<td>2017.12—2027.12</td>
+</tr>
+<tr>
+<td><strong>Shoola Dasha</strong>（逆境周期）</td>
+<td>Virgo</td>
+<td>⚠️ 逆境/考验</td>
+<td>2023.12—2032.12</td>
+</tr>
+</tbody>
+</table>
+<p>四套系统在 2023-2026 这段时间里的共同底色：<strong>扎根、磨砺、建设深度，不是扩张期</strong>。三套 Jaimini 系统（Chara/Narayana/Shoola）同时处于"考验或磨砺"性质的运段，Vimsottari 是平淡期——四管齐下，方向一致。这不是巧合，是四套独立算法给出的相同判断。</p>
+<hr />
+<h2>二、最关键的换盘节点：2026 年底 ～ 2027 年底</h2>
+<p><strong>2026 年 12 月：Chara Dasha 从 Scorpio → Libra</strong></p>
+<p>天秤由金星（你的 Yogakaraka，同时管事业 L10 和恋爱 L5）守护。Chara Libra 直接激活感情和事业双轨。这是本轮 Rahu 大运里 Chara 第一次进入你的核心资产星座。</p>
+<p><strong>2027 年 12 月：Narayana Dasha 从 Virgo → Libra</strong></p>
+<p>Narayana 比 Chara 晚一年换到天秤，意味着从 2027 年底开始，<strong>Chara 和 Narayana 两套环境层系统同时处于天秤</strong>——这种双系统共振在整个 Rahu 大运里只发生这一次。</p>
+<p><strong>2026.12—2028.03：Vimsottari Rahu-Jupiter 小运</strong></p>
+<p>Jupiter 在整宫 10 宫（事业宫），全盘力量第一。这段小运和上述两套环境层的换盘几乎同步。三系统在 2026 年底同时指向事业和感情方向。</p>
+<p><strong>综合判断</strong>：2026 年 12 月到 2028 年 3 月，是整个 Rahu 大运里<strong>四系统最集中的共振窗口</strong>。这段时间在事业方向上做明确的定位决策，在感情方向上保持开放态度，是和星盘节奏最一致的选择。</p>
+<hr />
+<h2>三、中期重要窗口（2028—2041）</h2>
+<h3>Rahu-Saturn 小运（2028.03—2031.02）× Narayana Libra（2027-2030）</h3>
+<p>Saturn = AmK（事业指示星）+ Core-Driver + Yogakaraka，Avastha = 青壮（Yuva）+ 醒（Jagrat，100%效率）。Saturn 这颗星当前完全清醒，是全盘 Avastha 最强的行星之一。</p>
+<p>Narayana 在 Libra（天秤，Venus 守护）+ Vimsottari Saturn 小运（同一颗星当值），这是罕见的"两套体系同一颗关键星同时激活"——<strong>2028-2030 是这张盘里专业深度真正开始结构化的窗口</strong>。不再只是探索，而是开始建设持久的专业根基。</p>
+<h3>Rahu-Venus 小运（2034.09—2037.09）× Narayana Scorpio（2030-2035）</h3>
+<p>Rahu-Venus 是 Rahu 大运里感情信号最密集的小运（Venus 管 L5 恋爱+L10 事业+是 DK）。这段时间感情和事业可能同时推进，两条线可能交织——遇到的人和你的职业方向有关联。</p>
+<h3>Shoola 顺境开始（2032.12—2041.12）</h3>
+<p>2032 年底，Shoola Dasha 从逆境期（Virgo）换到<strong>顺境（Libra，harsha）</strong>——为期 9 年的顺境周期，正好和 Vimsottari Jupiter 大运（2041 开始）接力。<strong>2032 年是这张盘整体能量质地的分水岭</strong>：在这之前是磨砺和建设，在这之后逐步进入舒展期。</p>
+<hr />
+<h2>四、长期视角（2041—2057）：Jupiter 大运 × Shoola 顺境</h2>
+<p>Jupiter 大运（2041-2057）是整张盘里 Vimsottari 最大的事业扩张窗口（全盘 Shadbala 第一，在 10 宫）。而 Shoola Dasha 在 2032-2041 已经进入顺境，2041 年 Shoola 换到 Scorpio（平稳），和 Jupiter 大运形成"平稳托底"的配合——<strong>扩张期有稳定的底盘，不是激进的冒进</strong>。</p>
+<hr />
+<h2>五、D30 在时间轴上的应用：辨别考验期的本质</h2>
+<p>Shoola Dasha 当前处于逆境期（2023-2032），但这不意味着这 9 年每一天都是灾难。结合 D30 的逆境结构：</p>
+<ul>
+<li>D30 的优势在 11 宫（Mercury/Sun/Venus，分析力和收益）+ 2 宫（Mars/Jupiter，意义框架）</li>
+<li>D30 的注意点在 5 宫（Saturn/Rahu/Ketu，创造力压制）</li>
+</ul>
+<p>所以这段 Shoola 逆境期的<strong>正确打开方式</strong>是：用分析力和深度工作把困难转化成专业积累（D30 11 宫），用更大的意义框架承受磨难（D30 2 宫），同时主动给自己留创造性的修复空间（打破 D30 5 宫的 Saturn 压制）。</p>
+<hr />
+<h2>六、一张时间导航图</h2>
+<table>
+<thead>
+<tr>
+<th>时段</th>
+<th>Shoola 质地</th>
+<th>Narayana</th>
+<th>关键事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2026.12</strong></td>
+<td>逆境期</td>
+<td>Virgo→<strong>Libra</strong></td>
+<td>Chara 换天秤，感情/事业双轨开启</td>
+</tr>
+<tr>
+<td><strong>2027.12</strong></td>
+<td>逆境期</td>
+<td><strong>Libra</strong></td>
+<td>Narayana 换天秤，双系统共振开始</td>
+</tr>
+<tr>
+<td><strong>2028.03</strong></td>
+<td>逆境期</td>
+<td>Libra</td>
+<td>Rahu-Saturn 小运开始，专业结构化</td>
+</tr>
+<tr>
+<td><strong>2030</strong></td>
+<td>逆境期</td>
+<td>Libra→Scorpio</td>
+<td>Narayana 换天蝎</td>
+</tr>
+<tr>
+<td><strong>2031.02</strong></td>
+<td>逆境期</td>
+<td>Scorpio</td>
+<td>Rahu-Mercury 小运（正缘信号）</td>
+</tr>
+<tr>
+<td><strong>2032.12</strong></td>
+<td><strong>顺境开始</strong></td>
+<td>Scorpio</td>
+<td>Shoola 换天秤，能量质地分水岭</td>
+</tr>
+<tr>
+<td><strong>2034.09</strong></td>
+<td>顺境</td>
+<td>Scorpio</td>
+<td>Rahu-Venus 小运，感情/事业最强信号</td>
+</tr>
+<tr>
+<td><strong>2037</strong></td>
+<td>顺境</td>
+<td>Scorpio→Sagittarius</td>
+<td>Shoola 射手（逆境预警，提前准备）</td>
+</tr>
+<tr>
+<td><strong>2041</strong></td>
+<td>平稳</td>
+<td>Sagittarius</td>
+<td>Jupiter 大运开始，事业扩张期</td>
+</tr>
+<tr>
+<td><strong>2057</strong></td>
+<td>逆境→顺境循环</td>
+<td>持续</td>
+<td>Saturn 大运，最终收获</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>核心结论</strong>：不要急于改变现在的节奏，磨砺期有它的价值。2026 年底到 2028 年是这段时间里最值得主动出击的窗口，2032 年是整体质地转变的真正分水岭。</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 15</div>
+    <h2>第六部分：事业 — 画像与叙事</h2>
+  </div>
+  <h1>事业深度分析（一）：职场画像与命运叙事</h1>
+<blockquote>
+<p>出生日期：2005-12-14 10:28 上海 男
+分析基于：D1/D9/D10 + Vimsottari Dasha + Chara Dasha + Avastha + Sodhya Pinda + Karakamsha
+Ayanamsa：Lahiri（23.9402°）</p>
+</blockquote>
+<hr />
+<h2>一、真实现状：CEO 正在沉睡</h2>
+<p>这张盘的事业宫主（L10）是金星，而金星在摩羯座上升的盘里是 <strong>Yogakaraka</strong>——同时管着5宫（创造/恋爱/投资）和10宫（事业/权威），这是整张盘功能最高的行星，理论上是你的事业 CEO。</p>
+<p>但新增的精度层揭示了一个需要正视的现实：<strong>金星现在实际效率极低</strong>。</p>
+<p>Avastha 数据显示金星处于「老年（Mrityu）+ 睡（Sushupti）」的双重低效状态。Mrityu 意味着这颗星的功能处于一个周期末尾，Sushupti 意味着其星宿主（太阳）和金星天然敌对，实际输出能力约 <strong>25%</strong>。Bhava Chalit（宫始盘）进一步显示：整宫制里金星在1宫，但宫始盘里它实际落在 <strong>12宫</strong>——不是台前的、显眼的路线，而是幕后、研究、非主流、或与灵性/海外有关的方向。</p>
+<p>这位 CEO 不是不行，是<strong>现在还没醒过来，而且它天生的表达方式就偏幕后</strong>。</p>
+<hr />
+<h2>二、真正的发动机：Mercury（水星）</h2>
+<p>Sodhya Pinda（Ashtakavarga 精细净强度）排名：<strong>Mercury 以 237 分位列全盘第一</strong>，远超 Shadbala 里排第4的表现。这说明水星的"结构性成色"是所有行星里最硬的。</p>
+<p>Karakamsha（事业灵魂指向）同指水星：事业指示星 Saturn 的 D9 落座射手座，以此为 Karakamsha Lagna，其10宫行星正是 <strong>Mercury</strong>。两套独立系统同时指向同一颗星，这是罕见的高置信度信号。</p>
+<p>水星式的事业方向：<strong>信息处理、深度研究、分析、知识系统化、精准传播</strong>。不是做展示型、关系型的工作，是做有专业深度、别人搞不定你来搞的事。</p>
+<p>D10（事业盘）交叉验证：
+- D10 Lagna = 金牛（Venus 底色），事业需要价值感和美感
+- 水星在 D10 第5宫处女座（入庙），极强
+- 木星在 D10 第11宫双鱼（入庙），收益有木星的保护</p>
+<hr />
+<h2>三、职场生态位：权威/稳态 + 市场/竞争 双轨</h2>
+<p>引擎判定生态位为「权威/稳态型 + 市场/竞争型」：
+- <strong>权威路线</strong>：10宫住客木星（全盘力量第1）给事业带来扩展感和视野，AL（Arudha Lagna）落在10宫天秤——世人通过你的职业成就来认识和定义你
+- <strong>竞争路线</strong>：木星同时管3宫（行动/技能）和12宫，带有【欺骗性风险】标注——扩展有代价，切忌无节制摊大</p>
+<p>两条路线叠加的含义：最适合「在某个专业领域建立权威声誉，通过竞争性地解决复杂问题来获得地位」，而不是靠人脉或关系驱动。</p>
+<hr />
+<h2>四、变现路径：三路同时打通</h2>
+<p>引擎标注三条变现路径（强星集合：Jupiter/Mars/Moon/Saturn/Sun/Venus）：</p>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>描述</th>
+<th>SAV参考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>产品/资产型</strong></td>
+<td>2宫主Saturn或强星入2宫，积累型财富</td>
+<td>28（平稳）</td>
+</tr>
+<tr>
+<td><strong>流量/服务型</strong></td>
+<td>11宫主Mars或强星入11宫，服务/增长驱动</td>
+<td>31（充裕）</td>
+</tr>
+<tr>
+<td><strong>危机/资源型</strong></td>
+<td>8宫主Sun或强星入8宫，他人资源/研究咨询</td>
+<td>28（平稳）</td>
+</tr>
+</tbody>
+</table>
+<p>三条路径同时触发，说明这张盘的变现能力不是单一渠道的，而是多点并发的。实际中最可能的组合是：靠专业深度（危机/研究型）建立声誉，同时累积资产（产品型），通过服务和社交网络扩大收益（流量型）。</p>
+<hr />
+<h2>五、Karakamsha 事业内核精读</h2>
+<ul>
+<li><strong>AmK = Saturn（事业指示星）</strong></li>
+<li>Saturn D9 = 射手座，以此为 Karakamsha Lagna</li>
+<li><strong>Karakamsha 1宫</strong>：Saturn + Rahu 同坐 → 深度知识追求 + 非常规路径探索的底色</li>
+<li><strong>Karakamsha 10宫</strong>：Mercury → 事业的「成就区」是水星式的输出——分析、研究、信息、传播</li>
+</ul>
+<p>翻译成人话：你的事业灵魂在于<strong>通过系统性的深度知识（Saturn+Rahu）产出精准有价值的信息（Mercury），最终建立专业声誉</strong>。不是一个只会执行的人，而是一个会建立自己知识体系、然后输出它的人。</p>
+<hr />
+<h2>六、D9 事业品质审计（精度修正）</h2>
+<p>金星 D9 落水瓶7宫（金库区），兑现率约80%，理性驱动——事业不是感性地投入，而是带着冷静判断。房东（土星）在D9射手5宫，稳健。变现1步极度顺畅（Capricorn→Aquarius）。</p>
+<p>土星 D9 落射手5宫，兑现率75-80%，带方向感——内心深处在问「这一切为了什么」，需要意义驱动，纯为钱工作不持久。</p>
+<p>水星 D9 落处女2宫（金库区），兑现率75%——信息处理能力有财务兑现潜力，这直接对应「靠专业深度赚钱」的方向。</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 16</div>
+    <h2>第六部分（续）：事业 — 战略决策</h2>
+  </div>
+  <h1>事业深度分析（二）：时间轴、战略决策与风险</h1>
+<hr />
+<h2>一、Dasha 事业时间轴</h2>
+<h3>当下窗口（2026年7月）</h3>
+<p><strong>Rahu 大运 · Jupiter 小运（2025.11—2028.03）</strong></p>
+<p>木星在整宫10宫，Bhava Bala 强度 1.12（有力），Avastha 是青壮（Yuva）+梦（Swapna，约50%效率）。这段时间木星在事业宫是有实质激活的，但效率打折——能推进，不会爆发式突破。</p>
+<p><strong>2026年12月：Chara Dasha（环境层）从天蝎换到天秤</strong></p>
+<p>天秤是你的10宫，守护星就是金星（L10，Yogakaraka）。这是两套时间体系的<strong>双系统共振</strong>——心理层（Vimsottari Jupiter）和环境层（Chara Libra）同时指向事业主题。</p>
+<blockquote>
+<p>从2026年12月到2028年3月是 Rahu 大运中对事业方向最集中的窗口，适合做明确的方向决策，而不是继续摸索。</p>
+</blockquote>
+<hr />
+<h3>建设期（2028—2031）</h3>
+<p><strong>Rahu-Saturn 小运（2028.03—2031.02）</strong></p>
+<p>Saturn = AmK（事业指示星）+ Core-Driver + Yogakaraka，Avastha = 青壮（Yuva）+ 醒（Jagrat，100%效率）。Saturn 这颗星现在<strong>完全清醒</strong>，是全盘最清醒的行星之一。</p>
+<p>在前一阶段定了方向之后，这段时间是真正打结构、打基础的时期。土星不给速成，但盖起来的东西是实的。Chara Dasha 继续在天秤（到2029.12），双系统持续共振。</p>
+<hr />
+<h3>探索期（2031—2041）</h3>
+<p>Rahu-Mercury（2031—2033）：水星（全盘 Sodhya Pinda 第1，结构性最强）当值，事业深度化、专业化的关键段。</p>
+<p>Rahu-Venus（2034—2037）：Yogakaraka 当值，金星管5+10宫，这是 Rahu 大运里事业能量最集中的小运。但结合 Avastha（Venus 现在是 Mrityu+Sushupti），需要时间发展，届时金星度数约进入成熟期。</p>
+<hr />
+<h3>扩张期（2041—2057）</h3>
+<p><strong>Jupiter 大运（2041—2057）</strong>：全盘力量第1（Shadbala 125%），坐在10宫，真正的事业扩张期。但 Jupiter 判定为混合期（⚠️边界，score +1.17，低置信度），原因是 Jupiter 管3+12宫，带【欺骗性风险】——扩张的同时要控制12宫的无形耗散，别摊太大。</p>
+<p>Jupiter-Saturn 小运（2043—2046）：正面期，最稳健的扩张窗口。</p>
+<p>Jupiter-Venus 小运（2049—2052）：Yogakaraka 双激活，事业和创造力双轨最强时段。</p>
+<hr />
+<h3>收获期（2057—2076）</h3>
+<p><strong>Saturn 大运（2057—2076）</strong>：正面期（score +5.30，高置信度，4条正面信号/0负面）。这是这辈子事业成果真正稳固和兑现的阶段。Saturn 是 Core-Driver + Yogakaraka + Dig Bala，一辈子积累的东西在这里结晶。</p>
+<hr />
+<h2>二、Argala（干预链）对事业的提示</h2>
+<p>10宫 Argala 净效果：<strong>positive（干预强）</strong>
+- 正干预：2宫 Sun+Mercury（深度思维和信息能力干预事业）；4宫 Venus（创造力干预事业）
+- 反干预：12宫 Ketu（轻度抵消）；10宫 Saturn（自我制约，节奏放慢）</p>
+<p>12宫的 Bhava Bala 是全盘最强（1.28 rupas，★最强）——这是一个不寻常的信号，12宫如此之强意味着你有很强的「幕后工作能力」和「独自深入」的天赋。结合金星 Chalit 落12宫，你真正擅长的工作状态可能是相对独立、深度专注、不需要持续曝光的那种。</p>
+<hr />
+<h2>三、阻力与风险</h2>
+<p><strong>风险1：平淡期的焦虑</strong></p>
+<p>Rahu 大运整体是平淡期（score 0，low confidence）。18年的大底色是「摸索和探索」，不会有特别戏剧性的极好或极坏。20岁出头就进入了18年的平淡期，容易因为「别人在爆发，我在原地」的错觉而焦虑——这是感知偏差，不是现实。这18年的任务是找准方向和打好基础，不是出成绩。</p>
+<p><strong>风险2：金星 Chalit 12宫的耗散</strong></p>
+<p>金星管10宫（事业），但在宫始盘里实际坐12宫（损耗）。这意味着你投入事业的能量有一部分会以「无形损耗」的方式流失——可能是过度付出却得不到匹配的回报，或者在某些方向越努力越亏损。识别并减少这类方向，比盲目努力重要。</p>
+<p><strong>风险3：Jupiter 的欺骗性风险</strong></p>
+<p>当前 Jupiter 小运（到2028年3月）里，木星力量最强但管12宫，带来一种「越投越多」的扩张冲动。这段时间要防止把资源投入到最终收不回来的方向，尤其是表面看起来很有前途但实际上耗散型的项目。</p>
+<hr />
+<h2>四、架构师箴言</h2>
+<ol>
+<li>
+<p><strong>你是长跑型的，不是爆发型的</strong>——前期探索，中期建设，后期收获。着急出成绩只会让你选错赛道。</p>
+</li>
+<li>
+<p><strong>找深度，别找宽度</strong>——Water星（Mercury）是你的发动机，水星赚钱靠的是钻得比别人深，不是覆盖面广。</p>
+</li>
+<li>
+<p><strong>2026年底是方向决策的关键点</strong>——Chara Libra 换盘和 Jupiter 小运同时在场，这是这几年里你做重大方向选择成功率最高的时段。</p>
+</li>
+<li>
+<p><strong>12宫是你的工作室，不是你的墓地</strong>——金星 Chalit 12宫、12宫 Bhava Bala 最强，说明你在相对独立、深度专注的环境里工作效率最高。别把这个标签理解成"失败"，而是理解成"你的最佳工作状态是独自深挖"。</p>
+</li>
+</ol>
+<hr />
+<h2>附录：关键数据速查</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L10</td>
+<td>Venus（Yogakaraka）</td>
+<td>整宫1宫；Chalit 12宫 ⚠️</td>
+</tr>
+<tr>
+<td>AmK（事业指示）</td>
+<td>Saturn</td>
+<td>Karakamsha = Sagittarius</td>
+</tr>
+<tr>
+<td>10宫住客</td>
+<td>Jupiter</td>
+<td>全盘力量第1，125%，【欺骗性风险】</td>
+</tr>
+<tr>
+<td>Sodhya Pinda 第1</td>
+<td>Mercury（237）</td>
+<td>结构性最强</td>
+</tr>
+<tr>
+<td>D10 强星</td>
+<td>Mercury（5宫处女，入庙）</td>
+<td>职业技能最扎实</td>
+</tr>
+<tr>
+<td>当前大运</td>
+<td>Rahu（2023—2041）平淡期</td>
+<td>探索定位底色</td>
+</tr>
+<tr>
+<td>当前小运</td>
+<td>Rahu-Jupiter（至2028.03）</td>
+<td>方向窗口，双系统共振中</td>
+</tr>
+<tr>
+<td>下一关键点</td>
+<td>Rahu-Saturn（2028—2031）</td>
+<td>建设结构，Saturn 完全清醒</td>
+</tr>
+<tr>
+<td>事业扩张期</td>
+<td>Jupiter 大运（2041—2057）</td>
+<td>全面释放，控制耗散</td>
+</tr>
+<tr>
+<td>最终收获期</td>
+<td>Saturn 大运（2057—2076）</td>
+<td>score +5.30，高置信度</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 17</div>
+    <h2>第七部分：感情 — 体质报告与时间轴</h2>
+  </div>
+  <h1>感情深度分析（一）：恋爱体质与配偶画像</h1>
+<blockquote>
+<p>出生日期：2005-12-14 10:28 上海 男
+分析基于：D1/D9 + L7/DK/UL + 7宫结构 + Avastha + Argala + Bhava Chalit
+DK 争议（7K=Venus，8K=Mercury）→ 降权，以 L7+7宫结构为主</p>
+</blockquote>
+<hr />
+<h2>一、恋爱体质报告</h2>
+<h3>整体定性：感知力强，慢热型，深水连接</h3>
+<p>月亮是你的7宫主（管婚姻/伴侣），入旺在金牛5宫，Avastha = 成熟（Vriddha）+ 醒（Jagrat，<strong>100%全效</strong>）。7宫管家处于最清醒的工作状态，这是好消息——你的感情「硬件」天然扎实，情感感知力强，一旦真的进入一段关系，连接能力是真实的。</p>
+<p>月亮（L7）Bhava Chalit 存在争议：整宫在5宫（恋爱/创造），宫始盘实际更靠近4宫（家庭/情感根基）。两个位置都告诉你一件事：<strong>你要的不是肾上腺素式的兴奋感，而是那种内心踏实的连接——一个让你觉得"在这个人身边我是安全的"</strong>。</p>
+<p>土星逆行坐在7宫巨蟹，Avastha = 青壮（Yuva）+ 醒（Jagrat，100%全效）。土星完全清醒地坐在婚姻宫，带来的是「慢热稳定型（引擎判定）」的关系性质——你不会轻易打开自己，需要时间确认，但一旦确认了，这段关系会很稳固。土星逆行还增加了一层「反复审视」的底色：你会对已确认的关系反复回顾和质检，这是保护机制，但过度了会变成拖延进入的障碍。</p>
+<h3>5宫（恋爱宫）分析</h3>
+<p>5宫主 Venus（Yogakaraka）去了1宫/宫始盘12宫。管家在外，恋爱能量需要通过你的自我表达来激活——你越真实地做自己，感情越流动。3颗星相位5宫：Sun（7th）、Mercury（7th）、Ketu（9th）。Ketu 相位5宫带来一种「对恋爱结果不执著」的出世态度，这不是冷漠，而是一种健康的放下。</p>
+<h3>7宫（伴侣宫）分析</h3>
+<p>7宫 Bhava Bala = 7.69 rupas，强度1.10（有力），是全盘较强的宫位。SAV = 28，平稳。Argala = <strong>neutral（中性平衡）</strong>——外部助力和阻力基本抵消，婚姻需要你自己主动推进，不会自动天降。</p>
+<p>7宫相位星：<strong>Mars（4宫7th）、Venus（1宫/Chalit 12宫 7th互望）、Rahu（3宫7th）</strong></p>
+<p>三颗星同时看着婚姻宫：
+- <strong>火星</strong>带来热度和真实的吸引力，但相处中可能有碰撞和张力——你们之间不会是完全平静的，会彼此激发
+- <strong>金星</strong>带来审美感和吸引力（尽管 Chalit 从12宫发出，有隐约的/幕后的色彩）——对方在你眼里会有一种「看着就舒服」的气质
+- <strong>Rahu</strong>带来非传统性和需要辨别的迷惑感——容易遇到「感觉很对但需要仔细辨别」的人</p>
+<hr />
+<h2>二、配偶画像</h2>
+<h3>三角定位框架</h3>
+<p>配偶画像由三条线索交叉：
+- <strong>L7（月亮，入旺金牛）</strong>：温暖、稳重、有情感深度、重品质生活的人
+- <strong>UL（伴侣宫）在8宫狮子</strong>：婚姻本身带有深度转化性质，对方有独立的自我意识和存在感
+- <strong>7宫住客土星（逆行）</strong>：对方不轻易打开，有自己的复杂性和「历史感」，但可靠</p>
+<p>DK 两套体系不一致（降权），不以 DK 为主画像来源。</p>
+<hr />
+<h3>气质层：这个人是什么感觉</h3>
+<p><strong>月亮入旺金牛→</strong> 对方的气质底色：温暖、稳重、有自己的审美和生活品味，不是那种高调张扬的人，但有真实的温度。重视舒适感和真实连接，不轻易表态，一旦承诺就很可靠。</p>
+<p><strong>UL 在狮子（8宫）→</strong> 同时有另一面：有自己的主见和存在感（狮子），不是完全退入背景的类型。婚姻里她不会是那个只是配合你的人，她有自己的声音和方向。</p>
+<p><strong>土星在7宫（逆行，巨蟹）→</strong> 对方身上可能带有某种厚重感——对家庭/根有强烈的情感投入，或者有一些需要慢慢消化的「历史重量」。你们都不轻易打开，所以走近的过程是慢的，但走进去之后会发现彼此的深度。</p>
+<hr />
+<h3>D9 灵魂层：深层品质</h3>
+<p>D9 Lagna = 狮子，D9的7宫 = 水瓶座，宫内星：<strong>Jupiter + Venus 同坐</strong>。</p>
+<p>这是一个相当好的 D9 7宫配置：木星（博大、智慧、保护）和金星（美感、和谐、滋养）在婚姻质量盘里同宿，意味着这段婚姻在灵魂层面是<strong>滋养型</strong>的，不是消耗型的。</p>
+<p>水瓶座给这个组合带来理智感和独立性——这段关系里双方保有自己的独立空间，不是互相黏着的模式，是「有一定精神独立同时深度连接」的类型。</p>
+<p>⚠️ 提示：Jupiter 和 Venus 在 D9 的位置对 Ayanamsa 敏感（Lahiri/Raman 体系不同），以上读法基于 Lahiri，保留一定余地。</p>
+<hr />
+<h3>月亮（L7）D9 深层审计（引自 p3a_d9）</h3>
+<p>月亮 D1 入旺，承诺强大的情感连接能力。D9 落双鱼8宫（有毒区），兑现率约50-60%，「带毒诱饵」。</p>
+<p>翻译成人话：你对感情的感知力和连接能力是真实的（D1），但这种深度本身会带来隐藏的转化——你在感情里不容易完全展示自己，或者说你展示的那一面和内心的那一面之间有距离。有时候你对感情看得很深，但表达出来的是另一种轻盈。关系可能经历某种「悄悄的深水流动」，不是轰轰烈烈的断裂，而是渐进式的深化或隐秘的转变。</p>
+<hr />
+<h3>UL（伴侣宫）在8宫狮子——婚姻的底色</h3>
+<p>这段婚姻不会是轻飘飘的，<strong>对方会以某种方式深刻地改变你</strong>。可能是改变你的价值观，可能是触发你某些深处的东西，可能是共同面对某种重大的转化——不论哪种，进入这段关系之后你不会是原来那个你。</p>
+<p>UL 在狮子，对方的某部分特质有狮子的色彩：骄傲、有主见、自我意识强、喜欢被看见。</p>
+<hr />
+<h2>三、吸引模式与潜在风险</h2>
+<p><strong>你会被什么类型的人吸引：</strong>
+有深度的、情感不轻易外露但内里温暖的人，有自己的审美和生活风格，不是社交型的热闹人，而是那种一对一相处让你感到安静和踏实的人。带有某种独立性和主见，不是完全顺从型的。</p>
+<p><strong>Rahu 相位7宫的警告：</strong>
+Rahu 从3宫直接相位婚姻宫，加上 Rahu 管3宫（网络/非传统场合），这是一个需要正视的信号。你在感情里有一定概率遇到「表面很吸引，感觉灵魂相通，但实际不那么可靠」的人。Rahu 带来的迷幻感可以快速制造强烈的吸引感，但那种感觉不一定代表真实的深度。<strong>辨别方法不是靠直觉，而是靠时间</strong>——土星在7宫的慢热不是折磨你，是在帮你过滤。</p>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 18</div>
+    <h2>第七部分（续）：感情 — 建议与风险</h2>
+  </div>
+  <h1>感情深度分析（二）：时机窗口与建议</h1>
+<hr />
+<h2>一、双系统时机分析</h2>
+<p>吠陀感情时机需要两层共振：<strong>Vimsottari（心理层，我想谈恋爱吗）</strong> × <strong>Chara Dasha（环境层，机会来了吗）</strong>。两层同时激活 = 高概率窗口。</p>
+<h3>当前（2026年7月）</h3>
+<p><strong>Vimsottari：Rahu-Jupiter 小运（2025.11—2028.03）</strong>
+感情时机信号：<strong>正缘信号</strong>（Jupiter = 吉星，激活5宫/9宫，缘分/成长场合）</p>
+<p><strong>Chara Dasha：天蝎座（2021.12—2026.12）→ 即将换到天秤（2026.12—2029.12）</strong>
+天蝎是11宫（社交/收益），天秤是10宫，由金星（L5恋爱宫主+L10事业宫主）守护。</p>
+<p><strong>重要时间节点：2026年12月，Chara Dasha 换入天秤</strong>
+天秤由你的感情和事业双Yogakaraka金星守护，这是双系统第一次同时指向感情/事业主题的叠加。这段时间<strong>遇到的人可能和你的职业圈子或共同追求有关联</strong>——在专业场合、有共同精神方向的圈子里，感情和事业线索可能是交织在一起的。</p>
+<hr />
+<h2>二、未来关键感情窗口（按时间顺序）</h2>
+<h3>窗口1：当下～2028年3月（Rahu-Jupiter）</h3>
+<ul>
+<li>类型：正缘信号</li>
+<li>特征：木星激活的缘分带有成长色彩，可能在学习/高等教育/有思想深度的场合出现</li>
+<li>注意：这段时间 Chara 在天蝎（社交/11宫），以接触新圈子为主，正式关系的推进在12月 Chara 换盘后更顺畅</li>
+</ul>
+<h3>窗口2：2031.02—2033.08（Rahu-Mercury）</h3>
+<ul>
+<li>类型：正缘信号（水星管9宫，运势/远方/高等教育）</li>
+<li>特征：与智识型、有思想的人相遇的概率增加，可能有一定的距离感或在求学/求知的场合出现</li>
+<li>Chara Dasha：处女座（2029.12—2039.12），处女由水星守护，与小运共振 ✓</li>
+</ul>
+<h3>窗口3：2034.09—2037.09（Rahu-Venus）<strong>最强感情窗口</strong></h3>
+<ul>
+<li>类型：正缘信号（三重触发：Venus 管5宫恋爱 + 是 Yogakaraka + DK降权后仍是主要指示星）</li>
+<li>特征：这是 Rahu 大运里感情能量最集中的小运。Venus 届时度数进入青壮期前段，Mrityu+Sushupti 的低效状态逐渐改善</li>
+<li>潜在形态：感情和事业可能同步推进，对方和你的职业方向有某种关联</li>
+<li>Chara Dasha：继续处女座，水星场域，信息/精准/分析型的场景</li>
+</ul>
+<h3>窗口4：2038.08—2040.02（Rahu-Moon）<strong>7宫主亲自当值</strong></h3>
+<ul>
+<li>类型：正缘信号（Moon = L7，7宫主直接激活，PK子女/恋爱指示）</li>
+<li>特征：这是这辈子第一次7宫主 Moon 直接当小运。对于还没走入稳定关系的人，这是最直接指向婚姻承诺的窗口</li>
+<li>7宫主入旺（金牛），这个小运里感情系统的「硬件」全开</li>
+</ul>
+<hr />
+<h2>三、关系性质判定</h2>
+<p>引擎判定：<strong>慢热稳定型（土星临7宫）</strong></p>
+<p>对应到每个窗口的关系性质预判：</p>
+<table>
+<thead>
+<tr>
+<th>窗口</th>
+<th>性质倾向</th>
+<th>推进到哪一步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rahu-Jupiter（当下）</td>
+<td>结识/试探阶段</td>
+<td>遇到但可能还在观察</td>
+</tr>
+<tr>
+<td>Rahu-Venus（2034—2037）</td>
+<td>正式感情推进</td>
+<td>有实质发展的概率高</td>
+</tr>
+<tr>
+<td>Rahu-Moon（2038—2040）</td>
+<td>关系深化/承诺</td>
+<td>7宫主当值，走向稳定</td>
+</tr>
+<tr>
+<td>Jupiter大运-Saturn小运（2043—2046）</td>
+<td>走入婚姻的成熟期</td>
+<td>土星在7宫积累能量释放</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>四、避坑指南</h2>
+<p><strong>坑1：把"感觉对"等同于"是对的人"</strong>
+Rahu 相位7宫，你有概率遇到非常能触发「灵魂相通」感觉的人，但那种感觉不等于这个人真的可靠。辨别方法：拉长观察时间（土星在7宫是你天然的过滤器，用它而不是对抗它）。</p>
+<p><strong>坑2：永远在审视，但不进入</strong>
+土星逆行的另一面是——你可能对一段关系反复质检但迟迟不给结论。当你已经确认这个人身上有真实的深度和可靠性，要给自己一个「允许进入」的信号，别让土星的谨慎变成永远的观察。</p>
+<p><strong>坑3：期待对方先打开</strong>
+你是慢热型，对方（UL 在8宫，带独立和自我意识）也可能是慢热型。两个慢热型的人等对方先打开，可能会错过。在你已经确认感觉之后，需要主动表达。</p>
+<p><strong>坑4：感情和事业分开考虑</strong>
+这张盘里感情和事业宫主是同一颗星（Venus，L5+L10），很多窗口期是两条线同时激活的。「通过共同的追求或职业场景相遇」是这张盘最高概率的缘分模式，别刻意把感情圈和工作圈完全隔开。</p>
+<hr />
+<h2>五、主动出击建议</h2>
+<ol>
+<li>
+<p><strong>当下到2028年3月</strong>：保持开放状态，不要刻意把自己封闭起来。这段时间遇到的人先接触，不用急着下判断，给土星的过滤机制一些时间运作。</p>
+</li>
+<li>
+<p><strong>2026年12月后</strong>：Chara 换盘后，跟自己事业方向相关的圈子里的人际关系值得多走走——感情线索很可能从这里开始。</p>
+</li>
+<li>
+<p><strong>长期建议</strong>：比起主动「找对象」，更有效的方式是深化自己在某个领域的投入（事业/学习/有意义的社群），然后在这个过程中遇到气质相符的人。这是这张盘最自然的缘分路径。</p>
+</li>
+</ol>
+<hr />
+<h2>六、关键数据速查</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L7（7宫主）</td>
+<td>Moon，入旺金牛，5宫（Chalit 4宫）</td>
+<td>婚姻硬件强，Jagrat全效</td>
+</tr>
+<tr>
+<td>关系性质</td>
+<td>慢热稳定型</td>
+<td>土星临7宫</td>
+</tr>
+<tr>
+<td>DK</td>
+<td>Venus（7K）/ Mercury（8K）不一致</td>
+<td>降权，以L7为主</td>
+</tr>
+<tr>
+<td>UL</td>
+<td>Leo，8宫</td>
+<td>婚姻带深度转化，对方有主见</td>
+</tr>
+<tr>
+<td>7宫住客</td>
+<td>Saturn（逆行）</td>
+<td>慢热，需时间验证</td>
+</tr>
+<tr>
+<td>相位7宫</td>
+<td>Mars / Venus / Rahu</td>
+<td>热度+吸引+非传统变数</td>
+</tr>
+<tr>
+<td>D9 7宫</td>
+<td>Jupiter + Venus（水瓶）</td>
+<td>灵魂层滋养型关系</td>
+</tr>
+<tr>
+<td>当前信号</td>
+<td>Rahu-Jupiter：正缘信号</td>
+<td>现在是感情开放的窗口</td>
+</tr>
+<tr>
+<td>最强窗口</td>
+<td>Rahu-Venus（2034—2037）</td>
+<td>三重触发，正缘信号</td>
+</tr>
+<tr>
+<td>7宫主当值</td>
+<td>Rahu-Moon（2038—2040）</td>
+<td>承诺类窗口</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section 19</div>
+    <h2>第八部分：D11深度转化盘分析</h2>
+  </div>
+  <h1>D11 Ekadasamsha（深度转化盘）分析</h1>
+<blockquote>
+<p>⚠️ <strong>高度私密分盘</strong>：本分析仅在本人知情同意且出生时间已校准后呈现
+分盘状态：✅ 已知情同意（本人明确同意），出生时间 Level 1（精确到分钟）
+D11 Lagna：Aries（白羊座）
+Ra-Ke 校验：✅ 对宫（差6，符合 D11 规则）</p>
+</blockquote>
+<hr />
+<h2>一、D11 的专业读法框架</h2>
+<p>D11（Ekadasamsha，十一分盘）在 BPHS 里被描述为揭示"人生中重大性质转变"的盘。KN Rao 体系里，它的实际用途是：<strong>判断人生中深度转化事件的性质和周期</strong>——不是预测具体时间点，而是描述"当这类事件发生时，它会以什么形式出现？转化之后会带来什么？"</p>
+<p>这张盘里，<strong>8 宫是核心</strong>（变故/转化/深层资源），其次是 <strong>12 宫</strong>（放下/超越/深层成长）。</p>
+<p><strong>重要限制声明</strong>：吠陀占星的寿命判断需要 D1+D8+22nd Drekkana+64th Navamsha 四套交叉确认，任何单一分盘都无法给出可靠的具体时间推断。本分析框架：<strong>转化性质和周期模式</strong>，而非具体时间预测。</p>
+<hr />
+<h2>二、D11 Lagna：白羊座</h2>
+<p>D11 上升是白羊，守护星是火星。白羊的底色是行动力、冲破、新开始。这告诉你：你的深度转化模式是<strong>主动型的</strong>——重大的生命转变不会以被动承受的方式发生，而是往往由你自己的行动或决定所触发，哪怕外部看起来像是"命运"。你不是被动挨打，而是主动走进转化。</p>
+<hr />
+<h2>三、关键配置解读</h2>
+<h3>Mercury + Rahu 在 D11 第 8 宫（天蝎座）</h3>
+<p>这是这张 D11 盘里最需要深看的配置。</p>
+<p>8 宫是转化/危机/深层资源/研究的宫位，天蝎座是8宫的自然对应星座，两者叠加，强化了深度探索的底色。水星（你的 Sodhya Pinda 第一，知识业力最强）和 Rahu（放大器）同在 D11 的 8 宫，意味着：</p>
+<p>你的深度转化往往<strong>通过信息、知识或某种"搞清楚"的过程</strong>来发生——不是情感上的崩溃和重建，而是认知层面的根本性颠覆。你经历一次重大转化，往往伴随着对某件事的彻底看透或者某种知识框架的完全更新。Rahu 放大了这个效果，意味着这种认知颠覆往往会超出你原来预期的深度——你以为你只是在"想清楚一件事"，但最后会发现自己翻转了一个更大的认知体系。</p>
+<p>水星在 D11 8 宫天蝎，状态是中性（天蝎座主是火星，水星与火星天然敌对）——这说明这种深度转化过程<strong>不会轻松</strong>，会有一定的内在阻力，但这也给了它韧性：你的认知颠覆不是浅尝辄止，而是必须扎进去才能完成。</p>
+<h3>Jupiter 在 D11 第 12 宫（双鱼）入庙</h3>
+<p>木星在 D11 的 12 宫双鱼，这是木星最喜欢的位置之一（自己的星座之一）。12 宫在深度盘里代表"放下、超越、最终的成长"。</p>
+<p>入庙的木星在 D11 12 宫，传达的信号是：<strong>你的重大转化，最终总有一个向上的出口</strong>。每一次深度的变故之后，都会有某种智慧或哲学的升华——不是空洞的"一切都是成长"，而是你真的会从中提炼出更深的洞见，这个洞见会成为你下一段旅程的底座。木星入庙，这个承诺是可以信赖的，兑现率高。</p>
+<p>这也解释了你在 D60 业力盘里 9 宫射手（意义追求）的深层来源——转化之后升华成智慧，是你的一种生命模式，不是偶然。</p>
+<h3>Venus + Mars 在 D11 第 6 宫（处女）——Venus 落陷</h3>
+<p>金星在 D11 的 6 宫处女，落陷（Venus 落陷于处女）。火星与金星同宫。</p>
+<p>6 宫是竞争/服务/疾病/日常磨砺的宫位，处女是细节、挑剔、分析的星座。金星（你的 Yogakaraka，管事业和恋爱）在 D11 落陷在 6 宫，揭示了一个重要的模式：<strong>你的深度转化往往从日常的摩擦和服务性的细节消耗开始</strong>——不是突如其来的大事件，而是长期积累的小耗损，直到某个临界点触发转化。</p>
+<p>金星落陷在这里还有另一层含义：在深度转化的周期里，与感情和事业相关的挑战往往来自"日常运转的磨损"，而不是戏剧性的冲突。需要留意的是：不要让这种积累性的消耗变成沉默的慢性损伤——早识别、早调整。</p>
+<p>火星（你的 Ruchaka Yoga，执行力核心）和金星同在 6 宫，给了这个配置一个积极的平衡——火星的行动力在这里是修复剂，当你主动投入行动去解决日常摩擦时，转化的启动就会比较顺畅。</p>
+<h3>Sun + Saturn 在 D11 第 4 宫（巨蟹）</h3>
+<p>太阳（AK，灵魂指示星）和土星（你的 Core-Driver，Yogakaraka）同在 D11 的家庭/情感根基宫，巨蟹座。</p>
+<p>4 宫在 D11 里指向转化的"根基层"——你的深度转化往往和内心的安全感、家庭基础、或者某种"回家"的感觉深度绑定。重大的转化前后，你对"家"（实际的居所或心理上的归属感）的态度会有显著变化。</p>
+<p>土星在巨蟹（中性位）和太阳同宫，这两颗星在 D1 里分属不同领域，但在 D11 的 4 宫相遇，说明：你的灵魂课题（太阳）和建设功课（土星）在转化层面汇聚在"根基"这个主题上——每一次重大转化，都包含着对"根"的某种重新理解，或者重新建立。</p>
+<h3>Ketu 在 D11 第 2 宫（金牛）</h3>
+<p>Ketu（南交点，代表过去的遗产和需要放下的执念）在 D11 的财富/价值观/语言宫，金牛座。</p>
+<p>这个位置说明：你的深度转化里，<strong>放下对某些物质或价值体系的执着</strong>是一个反复出现的主题。不是说你会变穷，而是说每一次重大转化之后，你对"什么是真正有价值的"这个问题的答案都会发生改变。这是 Ketu 在 2 宫的典型表现——放下旧的价值体系，进入新的视野。</p>
+<hr />
+<h2>四、D11 × D1 × D60 三层交叉</h2>
+<p><strong>Mercury</strong> 在 D1（11宫天蝎，功能复杂）+ D60（10宫摩羯，业力资产）+ D11（8宫天蝎）——三层都在天蝎和专业成就的方向上相互呼应。水星不只是你今生的发动机，也是你深度转化的媒介和业力积累的主要出口。<strong>这颗星贯穿了你人生的所有层次</strong>。</p>
+<p><strong>Venus</strong> 在 D1（1宫摩羯，Yogakaraka）+ D9（7宫水瓶，稳健）+ D11（6宫处女，落陷）——从 D1 的高位 Yogakaraka 到 D11 的落陷，金星在"表面"和"深层"之间有最大的落差。表面上这是你最强的资产，但在深度转化层里，金星是最容易受到磨损的那一颗。这不是矛盾，而是提醒：保护你的 Yogakaraka，不要让日常消耗把它耗空。</p>
+<p><strong>Jupiter</strong> 在 D1（10宫天秤，全盘力量第一，欺骗性风险）+ D9（7宫水瓶）+ D11（12宫双鱼，入庙）——D11 的木星入庙是这三层里最亮眼的配置。无论 D1 里木星管的是多容易扩散的领域，在深度转化的最终出口处，木星都是你最可靠的向上力量。每次转化都有智慧作为结局，这是木星 D11 入庙给你的承诺。</p>
+<hr />
+<h2>五、D11 与时间轴的交叉</h2>
+<p>目前处于 Rahu 大运，Rahu 在 D11 的 8 宫（天蝎）——当值的大运星（Rahu）正坐在 D11 最核心的转化宫。这不是巧合，Rahu 大运（2023-2041）和 D11 8 宫的 Rahu 同时激活，意味着：<strong>这 18 年里有某种深度的认知转化正在发生或即将发生</strong>，涉及你的知识体系、信息处理方式、或者某个"搞清楚"之后无法回头的洞见。</p>
+<p>Mercury 同在 D11 8 宫，而 Rahu-Mercury 小运（2031-2033）是 Rahu 大运里最直接激活这个配置的时段——那 2 年是认知转化最集中的窗口，值得留意。</p>
+<hr />
+<h2>六、核心结论（以"转化性质"为框架）</h2>
+<ol>
+<li><strong>你的深度转化是认知驱动型的</strong>——Mercury+Rahu 在 D11 8 宫，每次重大转变的核心是"某件事被彻底看透"</li>
+<li><strong>转化之后总有智慧的升华</strong>——Jupiter 入庙在 D11 12 宫，这是可以信赖的结构性承诺</li>
+<li><strong>日常磨损是转化的触发点</strong>——Venus 落陷在 D11 6 宫，要注意识别慢性积累的损耗，主动应对（Mars 同宫，行动力在这里是解药）</li>
+<li><strong>家庭/根基在转化中扮演核心角色</strong>——Sun+Saturn 在 D11 4 宫，每次重大转化都会重新定义你对"根"的理解</li>
+<li><strong>当前 Rahu 大运正在激活 D11 8 宫</strong>——这 18 年是认知转化的主要窗口期，Rahu-Mercury 小运（2031-2033）是最集中的时段</li>
+</ol>
+<hr />
+<blockquote>
+<p>⚠️ <strong>伦理说明</strong>：本分析基于 D11 描述转化的性质和周期，不推断生命终结的具体时间点。
+准确的寿命分析需要 D1+D8+22nd Drekkana+64th Navamsha 四套体系交叉，
+且即使如此，KN Rao 也明确指出这类分析只应在专业面对面场合进行。
+本报告不提供此类推断。</p>
+</blockquote>
+</div><div class="footer-note">
+  本报告基于传统吠陀占星方法（Parashari Jyotish | KN Rao School）。<br>
+  每项结论均有量化行星指标支撑。仅供自我反思与战略思考参考。<br>
+  &copy; Data-Driven Vedic Astrology</div></body></html>

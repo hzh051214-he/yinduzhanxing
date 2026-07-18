@@ -1,0 +1,49 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: vedic
+      POSTGRES_PASSWORD: vedic
+      POSTGRES_DB: vedic
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    env_file: .env
+    volumes:
+      - ./storage:/app/storage
+      - ../skills:/app/skills:ro   # 只读挂载 vedic 脚本
+    depends_on:
+      - redis
+      - postgres
+
+  worker:
+    build: .
+    command: celery -A app.tasks.reading_tasks.celery_app worker
+             --loglevel=info --concurrency=2 -Q default
+    env_file: .env
+    volumes:
+      - ./storage:/app/storage
+      - ../skills:/app/skills:ro
+    depends_on:
+      - redis
+      - postgres
+
+volumes:
+  redis_data:
+  postgres_data:
