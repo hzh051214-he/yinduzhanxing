@@ -1,0 +1,16 @@
+# Force LF for shell scripts (critical for Docker Linux containers)
+*.sh text eol=lf
+start_both.sh text eol=lf
+
+# Normal text files
+*.py text
+*.ts text
+*.js text
+*.vue text
+*.json text
+*.md text
+*.yml text
+*.yaml text
+
+# Windows batch files keep CRLF
+*.bat text eol=crlf

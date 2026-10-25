@@ -59,7 +59,11 @@ COPY --from=frontend-builder /frontend/dist /app/static
 # 存储目录（Railway Volume 会挂载到 /app/storage）
 RUN mkdir -p /app/storage/reports
 
+# 启动脚本（同时启动 Celery Worker 和 uvicorn）
+COPY start_both.sh /app/start_both.sh
+RUN chmod +x /app/start_both.sh
+
 EXPOSE 8000
 
-# 启动：FastAPI 服务同时 serve 前端静态文件
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+# 单容器同时运行 API + Worker（共享文件卷，避免 Railway 双服务共享 Volume 的问题）
+CMD ["/app/start_both.sh"]
